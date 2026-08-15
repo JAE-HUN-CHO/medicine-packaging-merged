@@ -1,0 +1,3581 @@
+{
+  "n_classes": 694,
+  "majors": [
+    {
+      "name": "해열진통소염",
+      "n_classes": 53,
+      "n_instances": 6898,
+      "mids": [
+        {
+          "name": "Paracetamol계",
+          "n_classes": 24,
+          "n_instances": 4159,
+          "classes": [
+            {
+              "name": "Paracetamol",
+              "count": 1142
+            },
+            {
+              "name": "Crocin",
+              "count": 840
+            },
+            {
+              "name": "Calpol",
+              "count": 436
+            },
+            {
+              "name": "Dolo-650",
+              "count": 391
+            },
+            {
+              "name": "Tylenol",
+              "count": 341
+            },
+            {
+              "name": "Ace XR",
+              "count": 268
+            },
+            {
+              "name": "dolo",
+              "count": 212
+            },
+            {
+              "name": "Pamol Paracetamol",
+              "count": 199
+            },
+            {
+              "name": "Panadol Paracetamol",
+              "count": 120
+            },
+            {
+              "name": "Panadol Extra Paracetamol",
+              "count": 97
+            },
+            {
+              "name": "TYLOLHOT",
+              "count": 48
+            },
+            {
+              "name": "Parol",
+              "count": 35
+            },
+            {
+              "name": "Panadol Extra",
+              "count": 7
+            },
+            {
+              "name": "Dumin",
+              "count": 4
+            },
+            {
+              "name": "Panadol",
+              "count": 4
+            },
+            {
+              "name": "Fasidol Forte",
+              "count": 3
+            },
+            {
+              "name": "Panadol Anak",
+              "count": 3
+            },
+            {
+              "name": "Biogesic",
+              "count": 2
+            },
+            {
+              "name": "Sanmol",
+              "count": 2
+            },
+            {
+              "name": "Biolgesic Paracetamol",
+              "count": 1
+            },
+            {
+              "name": "Mirasic 500",
+              "count": 1
+            },
+            {
+              "name": "Novagesic",
+              "count": 1
+            },
+            {
+              "name": "Pacetik",
+              "count": 1
+            },
+            {
+              "name": "Sumagesic",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "NSAID",
+          "n_classes": 25,
+          "n_instances": 2434,
+          "classes": [
+            {
+              "name": "Naproxen",
+              "count": 666
+            },
+            {
+              "name": "Ibuprofen",
+              "count": 429
+            },
+            {
+              "name": "Diclofenac",
+              "count": 182
+            },
+            {
+              "name": "Meloxicam",
+              "count": 163
+            },
+            {
+              "name": "xidolac",
+              "count": 147
+            },
+            {
+              "name": "Voltaren 100mg",
+              "count": 129
+            },
+            {
+              "name": "Cataflam 50mg",
+              "count": 120
+            },
+            {
+              "name": "Poldan MIG",
+              "count": 101
+            },
+            {
+              "name": "Naproxen Sodium",
+              "count": 91
+            },
+            {
+              "name": "Inza",
+              "count": 88
+            },
+            {
+              "name": "Piroxicam",
+              "count": 74
+            },
+            {
+              "name": "Etoricoxib",
+              "count": 59
+            },
+            {
+              "name": "ARVELES",
+              "count": 39
+            },
+            {
+              "name": "DOLOREX",
+              "count": 37
+            },
+            {
+              "name": "APRANAX",
+              "count": 36
+            },
+            {
+              "name": "MAJEZİK",
+              "count": 27
+            },
+            {
+              "name": "Etoricoxid",
+              "count": 13
+            },
+            {
+              "name": "Mefenamic Acid",
+              "count": 12
+            },
+            {
+              "name": "Proris",
+              "count": 6
+            },
+            {
+              "name": "Benzydamine",
+              "count": 4
+            },
+            {
+              "name": "Celecoxib",
+              "count": 4
+            },
+            {
+              "name": "Neorheumacyl Neuro",
+              "count": 3
+            },
+            {
+              "name": "Naprex",
+              "count": 2
+            },
+            {
+              "name": "Pirocam",
+              "count": 1
+            },
+            {
+              "name": "Ponstan",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "아스피린계",
+          "n_classes": 2,
+          "n_instances": 283,
+          "classes": [
+            {
+              "name": "Ecosprine",
+              "count": 174
+            },
+            {
+              "name": "Aspirin 81mg",
+              "count": 109
+            }
+          ]
+        },
+        {
+          "name": "기타진통",
+          "n_classes": 2,
+          "n_instances": 22,
+          "classes": [
+            {
+              "name": "Leflunomide",
+              "count": 20
+            },
+            {
+              "name": "Coparcetin",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "호흡기감기",
+      "n_classes": 109,
+      "n_instances": 5397,
+      "mids": [
+        {
+          "name": "종합감기",
+          "n_classes": 37,
+          "n_instances": 2725,
+          "classes": [
+            {
+              "name": "cheston-cold",
+              "count": 170
+            },
+            {
+              "name": "Sanaflu",
+              "count": 168
+            },
+            {
+              "name": "Mixagrip Flu",
+              "count": 161
+            },
+            {
+              "name": "Ultraflu PE",
+              "count": 160
+            },
+            {
+              "name": "Neozap Forte",
+              "count": 159
+            },
+            {
+              "name": "Mixagrip Flu dan Batuk",
+              "count": 151
+            },
+            {
+              "name": "Ultraflu Extra",
+              "count": 148
+            },
+            {
+              "name": "Intunal F",
+              "count": 142
+            },
+            {
+              "name": "Panadol Cold Flu",
+              "count": 138
+            },
+            {
+              "name": "Paramex Nyeri Otot",
+              "count": 113
+            },
+            {
+              "name": "Intunal Kaplet",
+              "count": 110
+            },
+            {
+              "name": "Paramex",
+              "count": 106
+            },
+            {
+              "name": "Paramex Flu dan Batuk PE",
+              "count": 102
+            },
+            {
+              "name": "Actifed",
+              "count": 101
+            },
+            {
+              "name": "Oskadon SP",
+              "count": 90
+            },
+            {
+              "name": "Procold Flu",
+              "count": 85
+            },
+            {
+              "name": "Oskadon Sakit Kepala",
+              "count": 83
+            },
+            {
+              "name": "Procold Flu dan Batuk",
+              "count": 80
+            },
+            {
+              "name": "Saridon Extra",
+              "count": 73
+            },
+            {
+              "name": "Decolgen",
+              "count": 68
+            },
+            {
+              "name": "판콜에이내복액",
+              "count": 64
+            },
+            {
+              "name": "Bodrex Flu dan Batuk PE",
+              "count": 51
+            },
+            {
+              "name": "Bodrex Migra",
+              "count": 46
+            },
+            {
+              "name": "판피린티정",
+              "count": 41
+            },
+            {
+              "name": "COLDAWAY C",
+              "count": 39
+            },
+            {
+              "name": "A-FERIN",
+              "count": 32
+            },
+            {
+              "name": "İBURAMİNCOLD",
+              "count": 18
+            },
+            {
+              "name": "Panadol Flu Batuk",
+              "count": 7
+            },
+            {
+              "name": "Intunal",
+              "count": 4
+            },
+            {
+              "name": "Intunal Syrup",
+              "count": 3
+            },
+            {
+              "name": "Neozep Forte",
+              "count": 3
+            },
+            {
+              "name": "Bodrex",
+              "count": 2
+            },
+            {
+              "name": "Bodrex Extra",
+              "count": 2
+            },
+            {
+              "name": "Bodrex Flu dan Batuk",
+              "count": 2
+            },
+            {
+              "name": "Bodrexin",
+              "count": 1
+            },
+            {
+              "name": "Fluanza",
+              "count": 1
+            },
+            {
+              "name": "Nalgestan",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "진해거담",
+          "n_classes": 33,
+          "n_instances": 941,
+          "classes": [
+            {
+              "name": "cofsils syrup",
+              "count": 152
+            },
+            {
+              "name": "Theophylline",
+              "count": 142
+            },
+            {
+              "name": "albuterol",
+              "count": 125
+            },
+            {
+              "name": "Exomuc 20mg",
+              "count": 97
+            },
+            {
+              "name": "Ambroxol",
+              "count": 59
+            },
+            {
+              "name": "OBH Combi",
+              "count": 59
+            },
+            {
+              "name": "Bromhexine",
+              "count": 48
+            },
+            {
+              "name": "Guaifenesin",
+              "count": 43
+            },
+            {
+              "name": "Carbocisteine",
+              "count": 39
+            },
+            {
+              "name": "Acetylcysteine",
+              "count": 38
+            },
+            {
+              "name": "Dextromethorphan",
+              "count": 38
+            },
+            {
+              "name": "Terpin Hydrate",
+              "count": 29
+            },
+            {
+              "name": "Laserin",
+              "count": 12
+            },
+            {
+              "name": "laserin Madu",
+              "count": 7
+            },
+            {
+              "name": "Nellco",
+              "count": 6
+            },
+            {
+              "name": "Amylmetacresol",
+              "count": 5
+            },
+            {
+              "name": "Bisolvon",
+              "count": 5
+            },
+            {
+              "name": "OBH Combi Anak",
+              "count": 4
+            },
+            {
+              "name": "Obat Batuk Ibu dan Anak",
+              "count": 4
+            },
+            {
+              "name": "Transpulmin Baby",
+              "count": 4
+            },
+            {
+              "name": "Vicks Vaporup",
+              "count": 4
+            },
+            {
+              "name": "Bisolvon Extra",
+              "count": 3
+            },
+            {
+              "name": "Paratusin",
+              "count": 3
+            },
+            {
+              "name": "Degirol",
+              "count": 2
+            },
+            {
+              "name": "Dextromethorphan Hbr",
+              "count": 2
+            },
+            {
+              "name": "Mucopect",
+              "count": 2
+            },
+            {
+              "name": "Mucos",
+              "count": 2
+            },
+            {
+              "name": "SPTroches",
+              "count": 2
+            },
+            {
+              "name": "Dichlorobenzyl Alcohol",
+              "count": 1
+            },
+            {
+              "name": "Komix Jahe",
+              "count": 1
+            },
+            {
+              "name": "Nelco",
+              "count": 1
+            },
+            {
+              "name": "Pectorin",
+              "count": 1
+            },
+            {
+              "name": "Vicks Inhealer",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "비염알레르기",
+          "n_classes": 24,
+          "n_instances": 1629,
+          "classes": [
+            {
+              "name": "bilastine 20",
+              "count": 371
+            },
+            {
+              "name": "Monas",
+              "count": 202
+            },
+            {
+              "name": "Brompheniramine",
+              "count": 178
+            },
+            {
+              "name": "Phenylephrine",
+              "count": 176
+            },
+            {
+              "name": "Loratadine",
+              "count": 136
+            },
+            {
+              "name": "Telfast 180mg",
+              "count": 97
+            },
+            {
+              "name": "Hydroxyzine",
+              "count": 87
+            },
+            {
+              "name": "Chlorpheniramine",
+              "count": 80
+            },
+            {
+              "name": "Fexofenadine",
+              "count": 78
+            },
+            {
+              "name": "Cetirizine",
+              "count": 53
+            },
+            {
+              "name": "Phenylephrine HCl",
+              "count": 52
+            },
+            {
+              "name": "Chlorphenoxamine",
+              "count": 23
+            },
+            {
+              "name": "Bilastine",
+              "count": 20
+            },
+            {
+              "name": "Cetirizine Dihydrochloride",
+              "count": 20
+            },
+            {
+              "name": "Mepyramine",
+              "count": 15
+            },
+            {
+              "name": "Antazoline",
+              "count": 11
+            },
+            {
+              "name": "Tetryzoline",
+              "count": 11
+            },
+            {
+              "name": "Chlorpheniramine maleate",
+              "count": 8
+            },
+            {
+              "name": "Oxymetazoline",
+              "count": 3
+            },
+            {
+              "name": "Antazoline HCl",
+              "count": 2
+            },
+            {
+              "name": "Diphenhydramine HCI",
+              "count": 2
+            },
+            {
+              "name": "Tetryzoline HCl",
+              "count": 2
+            },
+            {
+              "name": "Interhistin",
+              "count": 1
+            },
+            {
+              "name": "Naphazoline",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "한방감기",
+          "n_classes": 11,
+          "n_instances": 64,
+          "classes": [
+            {
+              "name": "Andrographis Paniculata",
+              "count": 15
+            },
+            {
+              "name": "Madu TJ",
+              "count": 12
+            },
+            {
+              "name": "Fa Ta Lai Jone",
+              "count": 8
+            },
+            {
+              "name": "OB Herbal",
+              "count": 8
+            },
+            {
+              "name": "Antangin",
+              "count": 6
+            },
+            {
+              "name": "Tolak Angin",
+              "count": 4
+            },
+            {
+              "name": "Tolak Angin Flu",
+              "count": 3
+            },
+            {
+              "name": "Tolak Angin Anak",
+              "count": 2
+            },
+            {
+              "name": "Tolak Angin Bebas Gula",
+              "count": 2
+            },
+            {
+              "name": "Tolak Angin Herbal",
+              "count": 2
+            },
+            {
+              "name": "Tolak Linu Herbal",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "기타호흡기",
+          "n_classes": 4,
+          "n_instances": 38,
+          "classes": [
+            {
+              "name": "Budesonide",
+              "count": 12
+            },
+            {
+              "name": "Fluticasone Propionate",
+              "count": 12
+            },
+            {
+              "name": "Salmeterol",
+              "count": 12
+            },
+            {
+              "name": "SERETIDE ACCU",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "순환기",
+      "n_classes": 32,
+      "n_instances": 7052,
+      "mids": [
+        {
+          "name": "Amlodipine",
+          "n_classes": 3,
+          "n_instances": 1482,
+          "classes": [
+            {
+              "name": "Amlodipine",
+              "count": 1066
+            },
+            {
+              "name": "amlodipine 10mg hipertensi",
+              "count": 220
+            },
+            {
+              "name": "amlodipine 5mg hipertensi",
+              "count": 196
+            }
+          ]
+        },
+        {
+          "name": "Atenolol",
+          "n_classes": 1,
+          "n_instances": 381,
+          "classes": [
+            {
+              "name": "Atenolol",
+              "count": 381
+            }
+          ]
+        },
+        {
+          "name": "Bisoprolol",
+          "n_classes": 2,
+          "n_instances": 232,
+          "classes": [
+            {
+              "name": "bisoprolol 2-5mg hipertensi",
+              "count": 116
+            },
+            {
+              "name": "bisoprolol 5mg hipertensi",
+              "count": 116
+            }
+          ]
+        },
+        {
+          "name": "Captopril",
+          "n_classes": 3,
+          "n_instances": 426,
+          "classes": [
+            {
+              "name": "captopril 12-5mg hipertensi",
+              "count": 170
+            },
+            {
+              "name": "captopril 25mg hipertensi",
+              "count": 142
+            },
+            {
+              "name": "captopril 50mg hipertensi",
+              "count": 114
+            }
+          ]
+        },
+        {
+          "name": "Diosmin",
+          "n_classes": 1,
+          "n_instances": 42,
+          "classes": [
+            {
+              "name": "Diosmin",
+              "count": 42
+            }
+          ]
+        },
+        {
+          "name": "Enalapril",
+          "n_classes": 1,
+          "n_instances": 132,
+          "classes": [
+            {
+              "name": "Enalapril",
+              "count": 132
+            }
+          ]
+        },
+        {
+          "name": "Furosemide",
+          "n_classes": 1,
+          "n_instances": 138,
+          "classes": [
+            {
+              "name": "Furosemide",
+              "count": 138
+            }
+          ]
+        },
+        {
+          "name": "Hydrochlorothiazide",
+          "n_classes": 1,
+          "n_instances": 166,
+          "classes": [
+            {
+              "name": "hidroklorotiazid 25mg hipertensi",
+              "count": 166
+            }
+          ]
+        },
+        {
+          "name": "Isosorbide",
+          "n_classes": 1,
+          "n_instances": 452,
+          "classes": [
+            {
+              "name": "Isosorbide Dinitrate",
+              "count": 452
+            }
+          ]
+        },
+        {
+          "name": "Losartan",
+          "n_classes": 2,
+          "n_instances": 727,
+          "classes": [
+            {
+              "name": "Losartan",
+              "count": 677
+            },
+            {
+              "name": "Losartan Potassium",
+              "count": 50
+            }
+          ]
+        },
+        {
+          "name": "Manidipine",
+          "n_classes": 1,
+          "n_instances": 25,
+          "classes": [
+            {
+              "name": "Manidipine",
+              "count": 25
+            }
+          ]
+        },
+        {
+          "name": "Methyldopa",
+          "n_classes": 2,
+          "n_instances": 215,
+          "classes": [
+            {
+              "name": "metildopa 250mg hipertensi",
+              "count": 144
+            },
+            {
+              "name": "Agidopa Methyldopa 250mg",
+              "count": 71
+            }
+          ]
+        },
+        {
+          "name": "Propranolol",
+          "n_classes": 1,
+          "n_instances": 168,
+          "classes": [
+            {
+              "name": "Propranolol",
+              "count": 168
+            }
+          ]
+        },
+        {
+          "name": "Ramipril",
+          "n_classes": 3,
+          "n_instances": 443,
+          "classes": [
+            {
+              "name": "ramipril 2-5mg hipertensi",
+              "count": 166
+            },
+            {
+              "name": "ramipril 5mg hipertensi",
+              "count": 139
+            },
+            {
+              "name": "ramipril 10mg hipertensi",
+              "count": 138
+            }
+          ]
+        },
+        {
+          "name": "Simvastatin",
+          "n_classes": 1,
+          "n_instances": 385,
+          "classes": [
+            {
+              "name": "Simvastatin",
+              "count": 385
+            }
+          ]
+        },
+        {
+          "name": "Telmisartan",
+          "n_classes": 1,
+          "n_instances": 477,
+          "classes": [
+            {
+              "name": "Telmisartan",
+              "count": 477
+            }
+          ]
+        },
+        {
+          "name": "브랜드",
+          "n_classes": 7,
+          "n_instances": 1161,
+          "classes": [
+            {
+              "name": "amlopine",
+              "count": 280
+            },
+            {
+              "name": "Pencor",
+              "count": 200
+            },
+            {
+              "name": "olmetime",
+              "count": 158
+            },
+            {
+              "name": "Betacor",
+              "count": 157
+            },
+            {
+              "name": "prenolol 25",
+              "count": 145
+            },
+            {
+              "name": "Cilacar",
+              "count": 136
+            },
+            {
+              "name": "Nifelat",
+              "count": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "당뇨",
+      "n_classes": 20,
+      "n_instances": 4845,
+      "mids": [
+        {
+          "name": "Glibenclamide",
+          "n_classes": 1,
+          "n_instances": 173,
+          "classes": [
+            {
+              "name": "Glibenclamide",
+              "count": 173
+            }
+          ]
+        },
+        {
+          "name": "Gliclazide",
+          "n_classes": 2,
+          "n_instances": 233,
+          "classes": [
+            {
+              "name": "gliclazide 60mg diabetes",
+              "count": 118
+            },
+            {
+              "name": "gliclazide 80mg diabetes",
+              "count": 115
+            }
+          ]
+        },
+        {
+          "name": "Glimepiride",
+          "n_classes": 5,
+          "n_instances": 1244,
+          "classes": [
+            {
+              "name": "Glimepiride",
+              "count": 624
+            },
+            {
+              "name": "glimepiride 2mg diabetes",
+              "count": 220
+            },
+            {
+              "name": "glimepiride 3mg diabetes",
+              "count": 142
+            },
+            {
+              "name": "glimepiride 4mg diabetes",
+              "count": 142
+            },
+            {
+              "name": "glimepiride 1mg diabetes",
+              "count": 116
+            }
+          ]
+        },
+        {
+          "name": "Glipizide",
+          "n_classes": 3,
+          "n_instances": 767,
+          "classes": [
+            {
+              "name": "Glipizide",
+              "count": 431
+            },
+            {
+              "name": "glipizide 5mg diabetes",
+              "count": 198
+            },
+            {
+              "name": "glipizide 10mg diabetes",
+              "count": 138
+            }
+          ]
+        },
+        {
+          "name": "Gliquidone",
+          "n_classes": 1,
+          "n_instances": 195,
+          "classes": [
+            {
+              "name": "gliquidone 30mg diabetes",
+              "count": 195
+            }
+          ]
+        },
+        {
+          "name": "Metformin",
+          "n_classes": 3,
+          "n_instances": 1123,
+          "classes": [
+            {
+              "name": "Metformin",
+              "count": 817
+            },
+            {
+              "name": "metformin 500mg diabetes",
+              "count": 194
+            },
+            {
+              "name": "metformin 850mg diabetes",
+              "count": 112
+            }
+          ]
+        },
+        {
+          "name": "Sitagliptin",
+          "n_classes": 2,
+          "n_instances": 494,
+          "classes": [
+            {
+              "name": "Sitagliptin",
+              "count": 354
+            },
+            {
+              "name": "sitagliptin 100mg diabetes",
+              "count": 140
+            }
+          ]
+        },
+        {
+          "name": "Voglibose",
+          "n_classes": 1,
+          "n_instances": 358,
+          "classes": [
+            {
+              "name": "Voglibose",
+              "count": 358
+            }
+          ]
+        },
+        {
+          "name": "브랜드",
+          "n_classes": 2,
+          "n_instances": 258,
+          "classes": [
+            {
+              "name": "Linatin",
+              "count": 171
+            },
+            {
+              "name": "Glycediab",
+              "count": 87
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "항균항바이러스",
+      "n_classes": 58,
+      "n_instances": 4878,
+      "mids": [
+        {
+          "name": "기타항균",
+          "n_classes": 22,
+          "n_instances": 1348,
+          "classes": [
+            {
+              "name": "Clindamycin",
+              "count": 283
+            },
+            {
+              "name": "Metronidazole",
+              "count": 279
+            },
+            {
+              "name": "Doxycyclin 100mg",
+              "count": 132
+            },
+            {
+              "name": "Metronidazol 250mg",
+              "count": 121
+            },
+            {
+              "name": "Impurin 50",
+              "count": 108
+            },
+            {
+              "name": "Sulorim",
+              "count": 87
+            },
+            {
+              "name": "Tinidazole",
+              "count": 75
+            },
+            {
+              "name": "Doxycycline",
+              "count": 72
+            },
+            {
+              "name": "Neomycin Sulfate",
+              "count": 47
+            },
+            {
+              "name": "Doxycycline Hyclate",
+              "count": 35
+            },
+            {
+              "name": "Nitrofurazone",
+              "count": 23
+            },
+            {
+              "name": "Chloramphenicol",
+              "count": 18
+            },
+            {
+              "name": "Mupirocin",
+              "count": 15
+            },
+            {
+              "name": "Oxytetracycline",
+              "count": 14
+            },
+            {
+              "name": "Thiamphenicol",
+              "count": 12
+            },
+            {
+              "name": "Gentamicin Sulfate",
+              "count": 8
+            },
+            {
+              "name": "Gentamicin",
+              "count": 7
+            },
+            {
+              "name": "Polymyxin B Sulfate",
+              "count": 5
+            },
+            {
+              "name": "Combantrin Jeruk",
+              "count": 3
+            },
+            {
+              "name": "Kalmicetine",
+              "count": 2
+            },
+            {
+              "name": "Combantrin",
+              "count": 1
+            },
+            {
+              "name": "Nifuroxazide",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "마크로라이드",
+          "n_classes": 3,
+          "n_instances": 413,
+          "classes": [
+            {
+              "name": "Azithromycin",
+              "count": 153
+            },
+            {
+              "name": "Roxithromycin",
+              "count": 133
+            },
+            {
+              "name": "azee-250",
+              "count": 127
+            }
+          ]
+        },
+        {
+          "name": "베타락탐",
+          "n_classes": 9,
+          "n_instances": 1059,
+          "classes": [
+            {
+              "name": "Dicloxacillin",
+              "count": 418
+            },
+            {
+              "name": "Ampicillin",
+              "count": 228
+            },
+            {
+              "name": "augmentin",
+              "count": 135
+            },
+            {
+              "name": "Augmentin 1g",
+              "count": 130
+            },
+            {
+              "name": "Amoxicillin",
+              "count": 89
+            },
+            {
+              "name": "Phenoxymethylpenicillin",
+              "count": 29
+            },
+            {
+              "name": "Clavulanic Acid",
+              "count": 22
+            },
+            {
+              "name": "Amoxicillinand Clavulanic Acid",
+              "count": 5
+            },
+            {
+              "name": "Penicillin",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "name": "세팔로스포린",
+          "n_classes": 6,
+          "n_instances": 950,
+          "classes": [
+            {
+              "name": "sefloc",
+              "count": 386
+            },
+            {
+              "name": "Cefixime",
+              "count": 215
+            },
+            {
+              "name": "Cef-3",
+              "count": 175
+            },
+            {
+              "name": "Cefixim 200mg",
+              "count": 136
+            },
+            {
+              "name": "Cefixine",
+              "count": 36
+            },
+            {
+              "name": "Lostracef",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "퀴놀론",
+          "n_classes": 5,
+          "n_instances": 234,
+          "classes": [
+            {
+              "name": "Norfloxacin",
+              "count": 151
+            },
+            {
+              "name": "Ciprofloxacin 500mg",
+              "count": 64
+            },
+            {
+              "name": "Moxifloxacin",
+              "count": 12
+            },
+            {
+              "name": "Moxifloxacin Hydrochloride",
+              "count": 6
+            },
+            {
+              "name": "CIPROFLOXACIN",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "항바이러스",
+          "n_classes": 1,
+          "n_instances": 196,
+          "classes": [
+            {
+              "name": "Acyclovir",
+              "count": 196
+            }
+          ]
+        },
+        {
+          "name": "항진균",
+          "n_classes": 12,
+          "n_instances": 678,
+          "classes": [
+            {
+              "name": "Ketoconazole",
+              "count": 346
+            },
+            {
+              "name": "Sporal 100mg",
+              "count": 116
+            },
+            {
+              "name": "Clotrimazole",
+              "count": 66
+            },
+            {
+              "name": "Fluconazole 150mg",
+              "count": 66
+            },
+            {
+              "name": "Bifonazole",
+              "count": 42
+            },
+            {
+              "name": "Itraconazole",
+              "count": 20
+            },
+            {
+              "name": "Fluconazole",
+              "count": 14
+            },
+            {
+              "name": "Mycoral",
+              "count": 3
+            },
+            {
+              "name": "Itrabat",
+              "count": 2
+            },
+            {
+              "name": "Ketokonazole",
+              "count": 1
+            },
+            {
+              "name": "Mycostatin",
+              "count": 1
+            },
+            {
+              "name": "Nocandis",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "소화기",
+      "n_classes": 49,
+      "n_instances": 2375,
+      "mids": [
+        {
+          "name": "제산궤양",
+          "n_classes": 25,
+          "n_instances": 1659,
+          "classes": [
+            {
+              "name": "Simethicone",
+              "count": 565
+            },
+            {
+              "name": "pepfamin",
+              "count": 346
+            },
+            {
+              "name": "Dexilend",
+              "count": 177
+            },
+            {
+              "name": "Esoral",
+              "count": 160
+            },
+            {
+              "name": "Lomac 20mg",
+              "count": 96
+            },
+            {
+              "name": "Aluminium Hydroxide",
+              "count": 61
+            },
+            {
+              "name": "GAVISCON",
+              "count": 46
+            },
+            {
+              "name": "Omeprazole",
+              "count": 43
+            },
+            {
+              "name": "LANSOR",
+              "count": 38
+            },
+            {
+              "name": "Magnesium Hydroxide",
+              "count": 29
+            },
+            {
+              "name": "RENNİE",
+              "count": 19
+            },
+            {
+              "name": "Magnesium Trisilicate",
+              "count": 17
+            },
+            {
+              "name": "Famotidine",
+              "count": 13
+            },
+            {
+              "name": "Polysilane",
+              "count": 10
+            },
+            {
+              "name": "Dioctahedral smectite",
+              "count": 8
+            },
+            {
+              "name": "Mylanta",
+              "count": 8
+            },
+            {
+              "name": "Promag",
+              "count": 5
+            },
+            {
+              "name": "Lambucid",
+              "count": 4
+            },
+            {
+              "name": "Plantacid Forte",
+              "count": 4
+            },
+            {
+              "name": "Aluminum Hydroxide",
+              "count": 3
+            },
+            {
+              "name": "Plantacid",
+              "count": 2
+            },
+            {
+              "name": "Sucralfate",
+              "count": 2
+            },
+            {
+              "name": "Neosanmag",
+              "count": 1
+            },
+            {
+              "name": "Polycrol",
+              "count": 1
+            },
+            {
+              "name": "Sanmag",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "소화효소",
+          "n_classes": 5,
+          "n_instances": 273,
+          "classes": [
+            {
+              "name": "Alpha Choay 4200IU",
+              "count": 75
+            },
+            {
+              "name": "닥터베아제정",
+              "count": 68
+            },
+            {
+              "name": "베아제정",
+              "count": 65
+            },
+            {
+              "name": "훼스탈플러스정",
+              "count": 48
+            },
+            {
+              "name": "Pancreatin",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "name": "지사제",
+          "n_classes": 5,
+          "n_instances": 47,
+          "classes": [
+            {
+              "name": "Loperamide",
+              "count": 26
+            },
+            {
+              "name": "Kaolin",
+              "count": 16
+            },
+            {
+              "name": "Diatabs",
+              "count": 2
+            },
+            {
+              "name": "Entrostop",
+              "count": 2
+            },
+            {
+              "name": "Diapet",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "기타소화",
+          "n_classes": 14,
+          "n_instances": 396,
+          "classes": [
+            {
+              "name": "omidon",
+              "count": 146
+            },
+            {
+              "name": "No Spa Forte 80mg",
+              "count": 127
+            },
+            {
+              "name": "Hyoscine-n-butylbromide",
+              "count": 66
+            },
+            {
+              "name": "Domperidone",
+              "count": 18
+            },
+            {
+              "name": "Activated Charcoal",
+              "count": 15
+            },
+            {
+              "name": "Curcuma Plus",
+              "count": 8
+            },
+            {
+              "name": "Lactulax",
+              "count": 4
+            },
+            {
+              "name": "Lacto-B",
+              "count": 3
+            },
+            {
+              "name": "Mebeverine",
+              "count": 3
+            },
+            {
+              "name": "Microlax",
+              "count": 2
+            },
+            {
+              "name": "Antiflatulence",
+              "count": 1
+            },
+            {
+              "name": "Dulcolax",
+              "count": 1
+            },
+            {
+              "name": "Norvom",
+              "count": 1
+            },
+            {
+              "name": "Peptisol",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "신경정신",
+      "n_classes": 33,
+      "n_instances": 3549,
+      "mids": [
+        {
+          "name": "항전간신경통",
+          "n_classes": 3,
+          "n_instances": 467,
+          "classes": [
+            {
+              "name": "Pregabalin Sandoz 75",
+              "count": 261
+            },
+            {
+              "name": "Pregaba",
+              "count": 167
+            },
+            {
+              "name": "Gabapentin",
+              "count": 39
+            }
+          ]
+        },
+        {
+          "name": "항우울항정신",
+          "n_classes": 10,
+          "n_instances": 1381,
+          "classes": [
+            {
+              "name": "Selrotine",
+              "count": 249
+            },
+            {
+              "name": "Aripiprazole",
+              "count": 191
+            },
+            {
+              "name": "Angenta",
+              "count": 171
+            },
+            {
+              "name": "Tryptin",
+              "count": 165
+            },
+            {
+              "name": "Epiclon",
+              "count": 164
+            },
+            {
+              "name": "Lorazepam",
+              "count": 144
+            },
+            {
+              "name": "Amitriptyline",
+              "count": 128
+            },
+            {
+              "name": "Clorazepate Dipotassium",
+              "count": 109
+            },
+            {
+              "name": "Fluoxetine",
+              "count": 50
+            },
+            {
+              "name": "Amitriptyline HCl",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "name": "편두통",
+          "n_classes": 3,
+          "n_instances": 22,
+          "classes": [
+            {
+              "name": "Ergotamine",
+              "count": 10
+            },
+            {
+              "name": "Eletriptan",
+              "count": 8
+            },
+            {
+              "name": "Sumatriptan",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "어지럼",
+          "n_classes": 8,
+          "n_instances": 533,
+          "classes": [
+            {
+              "name": "Diphenidol",
+              "count": 154
+            },
+            {
+              "name": "Flunarizine",
+              "count": 130
+            },
+            {
+              "name": "Nautamine 90mg",
+              "count": 122
+            },
+            {
+              "name": "Betahistine",
+              "count": 69
+            },
+            {
+              "name": "Cinnarizine",
+              "count": 29
+            },
+            {
+              "name": "Dimenhydrinate",
+              "count": 24
+            },
+            {
+              "name": "Antimo Anak",
+              "count": 3
+            },
+            {
+              "name": "Antimo",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "통풍",
+          "n_classes": 2,
+          "n_instances": 714,
+          "classes": [
+            {
+              "name": "Allopurinol",
+              "count": 690
+            },
+            {
+              "name": "Colchicine",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "name": "기타신경",
+          "n_classes": 7,
+          "n_instances": 432,
+          "classes": [
+            {
+              "name": "Beklo",
+              "count": 178
+            },
+            {
+              "name": "Tolperisone",
+              "count": 88
+            },
+            {
+              "name": "Flavoxate",
+              "count": 69
+            },
+            {
+              "name": "Orphenadrine Citrate",
+              "count": 61
+            },
+            {
+              "name": "Tramadol",
+              "count": 30
+            },
+            {
+              "name": "Tolperisone Hydrochloride",
+              "count": 4
+            },
+            {
+              "name": "valeriana officinalis",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "호르몬내분비",
+      "n_classes": 11,
+      "n_instances": 1157,
+      "mids": [
+        {
+          "name": "갑상선",
+          "n_classes": 3,
+          "n_instances": 423,
+          "classes": [
+            {
+              "name": "Methimazole",
+              "count": 176
+            },
+            {
+              "name": "Levothyroxine",
+              "count": 151
+            },
+            {
+              "name": "thyroxine",
+              "count": 96
+            }
+          ]
+        },
+        {
+          "name": "스테로이드",
+          "n_classes": 3,
+          "n_instances": 280,
+          "classes": [
+            {
+              "name": "hydrocortisone",
+              "count": 146
+            },
+            {
+              "name": "Prednison 5mg",
+              "count": 92
+            },
+            {
+              "name": "Triamcinolone Acetonide",
+              "count": 42
+            }
+          ]
+        },
+        {
+          "name": "여성호르몬",
+          "n_classes": 5,
+          "n_instances": 454,
+          "classes": [
+            {
+              "name": "Cyclogest 400mg",
+              "count": 124
+            },
+            {
+              "name": "Valiera 2mg",
+              "count": 115
+            },
+            {
+              "name": "Misoprostol200",
+              "count": 99
+            },
+            {
+              "name": "Femara 2.5mg",
+              "count": 78
+            },
+            {
+              "name": "Utrogestan 200mg",
+              "count": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "피부외용",
+      "n_classes": 98,
+      "n_instances": 1282,
+      "mids": [
+        {
+          "name": "항진균외용",
+          "n_classes": 7,
+          "n_instances": 111,
+          "classes": [
+            {
+              "name": "Canesten Cream 20g",
+              "count": 76
+            },
+            {
+              "name": "Tolnaftate",
+              "count": 15
+            },
+            {
+              "name": "Lodochlorhydroxyquin",
+              "count": 10
+            },
+            {
+              "name": "Iodochlorhydroxyquin",
+              "count": 5
+            },
+            {
+              "name": "Canesten",
+              "count": 2
+            },
+            {
+              "name": "Daktarin",
+              "count": 2
+            },
+            {
+              "name": "Ketokonazole Cream",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "스테로이드외용",
+          "n_classes": 8,
+          "n_instances": 258,
+          "classes": [
+            {
+              "name": "Betamethasone Valerate",
+              "count": 72
+            },
+            {
+              "name": "Gentrison",
+              "count": 68
+            },
+            {
+              "name": "Desoximetasone",
+              "count": 45
+            },
+            {
+              "name": "Clobetasol Propionate",
+              "count": 38
+            },
+            {
+              "name": "Fluocinolone Acetonide",
+              "count": 15
+            },
+            {
+              "name": "Betamethasone Dipropionate",
+              "count": 11
+            },
+            {
+              "name": "Mometasone Furoate",
+              "count": 8
+            },
+            {
+              "name": "Kenalog",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "파스외용",
+          "n_classes": 39,
+          "n_instances": 717,
+          "classes": [
+            {
+              "name": "Eugenol",
+              "count": 125
+            },
+            {
+              "name": "Methyl Salicylate",
+              "count": 123
+            },
+            {
+              "name": "Levomenthol",
+              "count": 104
+            },
+            {
+              "name": "신신파스 아렉스",
+              "count": 86
+            },
+            {
+              "name": "Menthol",
+              "count": 63
+            },
+            {
+              "name": "BEN-GAY",
+              "count": 38
+            },
+            {
+              "name": "Salol and Menthol",
+              "count": 38
+            },
+            {
+              "name": "Camphor",
+              "count": 29
+            },
+            {
+              "name": "Minyak Tawon",
+              "count": 12
+            },
+            {
+              "name": "ByeBye Fever",
+              "count": 9
+            },
+            {
+              "name": "Balsem Otot Geliga",
+              "count": 8
+            },
+            {
+              "name": "MyBaby Minyak Telon",
+              "count": 7
+            },
+            {
+              "name": "Cooling 5",
+              "count": 6
+            },
+            {
+              "name": "Counterpain",
+              "count": 6
+            },
+            {
+              "name": "Hotin Cream",
+              "count": 6
+            },
+            {
+              "name": "Plossa",
+              "count": 6
+            },
+            {
+              "name": "Minyak Angin Cap Kapak",
+              "count": 5
+            },
+            {
+              "name": "Freshcare Hot",
+              "count": 4
+            },
+            {
+              "name": "Freshcare Lavender",
+              "count": 3
+            },
+            {
+              "name": "Freshcare Smash",
+              "count": 3
+            },
+            {
+              "name": "Medicated Oil",
+              "count": 3
+            },
+            {
+              "name": "Safecare",
+              "count": 3
+            },
+            {
+              "name": "Salonpas",
+              "count": 3
+            },
+            {
+              "name": "Balsem lang",
+              "count": 2
+            },
+            {
+              "name": "Freshcare Citrus",
+              "count": 2
+            },
+            {
+              "name": "Freshcare Kayu Putih",
+              "count": 2
+            },
+            {
+              "name": "Handsaplast Koyo Panas",
+              "count": 2
+            },
+            {
+              "name": "Hansaplast",
+              "count": 2
+            },
+            {
+              "name": "Koyo Cabe",
+              "count": 2
+            },
+            {
+              "name": "Minyak Kayu Putih Cap Ayam",
+              "count": 2
+            },
+            {
+              "name": "Minyak Kayu Putih Sierra",
+              "count": 2
+            },
+            {
+              "name": "Minyak Telon Lang",
+              "count": 2
+            },
+            {
+              "name": "Salonpas Gel",
+              "count": 2
+            },
+            {
+              "name": "Salonpas Jet Spray",
+              "count": 2
+            },
+            {
+              "name": "Counterpain Cool",
+              "count": 1
+            },
+            {
+              "name": "Freshcare Eucalyptus",
+              "count": 1
+            },
+            {
+              "name": "Minyak Angin Cap lang",
+              "count": 1
+            },
+            {
+              "name": "Minyak Telon Sierra",
+              "count": 1
+            },
+            {
+              "name": "Safecare Strong",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "위생화장품",
+          "n_classes": 26,
+          "n_instances": 82,
+          "classes": [
+            {
+              "name": "Herocyn",
+              "count": 13
+            },
+            {
+              "name": "Polident",
+              "count": 8
+            },
+            {
+              "name": "Betadine",
+              "count": 5
+            },
+            {
+              "name": "GPU",
+              "count": 5
+            },
+            {
+              "name": "Alcoplus",
+              "count": 4
+            },
+            {
+              "name": "Betadine Salep",
+              "count": 4
+            },
+            {
+              "name": "Dettol",
+              "count": 4
+            },
+            {
+              "name": "Sabun JF",
+              "count": 4
+            },
+            {
+              "name": "Alco",
+              "count": 3
+            },
+            {
+              "name": "Dermatix",
+              "count": 3
+            },
+            {
+              "name": "Lactacyd Baby",
+              "count": 3
+            },
+            {
+              "name": "Y-rins",
+              "count": 3
+            },
+            {
+              "name": "Bepanthen Baby",
+              "count": 2
+            },
+            {
+              "name": "Betadine Feminime Hygiene",
+              "count": 2
+            },
+            {
+              "name": "Betadine Obat Kumur",
+              "count": 2
+            },
+            {
+              "name": "Caladine",
+              "count": 2
+            },
+            {
+              "name": "Callusol",
+              "count": 2
+            },
+            {
+              "name": "Minosep",
+              "count": 2
+            },
+            {
+              "name": "Minosep Hijau",
+              "count": 2
+            },
+            {
+              "name": "Selsun",
+              "count": 2
+            },
+            {
+              "name": "Zambuk",
+              "count": 2
+            },
+            {
+              "name": "Bepanthen",
+              "count": 1
+            },
+            {
+              "name": "Bio-Oil",
+              "count": 1
+            },
+            {
+              "name": "Sterimar Bouche",
+              "count": 1
+            },
+            {
+              "name": "Sterimar Hygiene",
+              "count": 1
+            },
+            {
+              "name": "Sterimar Hygiene Baby",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "기타외용",
+          "n_classes": 18,
+          "n_instances": 114,
+          "classes": [
+            {
+              "name": "Calamine",
+              "count": 51
+            },
+            {
+              "name": "Benzoyl Peroxide",
+              "count": 27
+            },
+            {
+              "name": "Tretinoin",
+              "count": 6
+            },
+            {
+              "name": "Cendo Eyefresh",
+              "count": 5
+            },
+            {
+              "name": "Minoxidil",
+              "count": 3
+            },
+            {
+              "name": "Vital Ear Oil",
+              "count": 3
+            },
+            {
+              "name": "Cendo Protagenta",
+              "count": 2
+            },
+            {
+              "name": "Nebacetin",
+              "count": 2
+            },
+            {
+              "name": "Noroid",
+              "count": 2
+            },
+            {
+              "name": "Pasquam",
+              "count": 2
+            },
+            {
+              "name": "Peditox",
+              "count": 2
+            },
+            {
+              "name": "Permethrin",
+              "count": 2
+            },
+            {
+              "name": "Salep 88",
+              "count": 2
+            },
+            {
+              "name": "Pi Kang Shuang",
+              "count": 1
+            },
+            {
+              "name": "Prodermis",
+              "count": 1
+            },
+            {
+              "name": "Rohto",
+              "count": 1
+            },
+            {
+              "name": "Rohto Dry Fresh",
+              "count": 1
+            },
+            {
+              "name": "Salicyl Talk",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "비타민영양",
+      "n_classes": 68,
+      "n_instances": 2015,
+      "mids": [
+        {
+          "name": "종합비타민",
+          "n_classes": 25,
+          "n_instances": 358,
+          "classes": [
+            {
+              "name": "Vitabion",
+              "count": 180
+            },
+            {
+              "name": "Berocca",
+              "count": 72
+            },
+            {
+              "name": "BENEXOL B12",
+              "count": 32
+            },
+            {
+              "name": "Sakatonik ABC",
+              "count": 8
+            },
+            {
+              "name": "Scotts",
+              "count": 7
+            },
+            {
+              "name": "Neurobion Forte",
+              "count": 6
+            },
+            {
+              "name": "Renovit Gold",
+              "count": 6
+            },
+            {
+              "name": "Vitamin CVitamin D plus",
+              "count": 6
+            },
+            {
+              "name": "Vitamin B group",
+              "count": 5
+            },
+            {
+              "name": "Apialys Drop",
+              "count": 4
+            },
+            {
+              "name": "Caviplex Cdez",
+              "count": 4
+            },
+            {
+              "name": "Apialys Sirup",
+              "count": 3
+            },
+            {
+              "name": "Enervon-C",
+              "count": 3
+            },
+            {
+              "name": "Oxyvit",
+              "count": 3
+            },
+            {
+              "name": "Tonikum Bayer",
+              "count": 3
+            },
+            {
+              "name": "Becom-Zet",
+              "count": 2
+            },
+            {
+              "name": "Cerebrofort",
+              "count": 2
+            },
+            {
+              "name": "Holisticare Ester C",
+              "count": 2
+            },
+            {
+              "name": "Neurodex",
+              "count": 2
+            },
+            {
+              "name": "Neurosanbe",
+              "count": 2
+            },
+            {
+              "name": "Zegavit",
+              "count": 2
+            },
+            {
+              "name": "Curvit",
+              "count": 1
+            },
+            {
+              "name": "Neurobion",
+              "count": 1
+            },
+            {
+              "name": "Neurotropic",
+              "count": 1
+            },
+            {
+              "name": "Nusaplex",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "단일영양",
+          "n_classes": 36,
+          "n_instances": 1219,
+          "classes": [
+            {
+              "name": "Kalcoral-D",
+              "count": 177
+            },
+            {
+              "name": "Dicaltrol",
+              "count": 174
+            },
+            {
+              "name": "cevit",
+              "count": 146
+            },
+            {
+              "name": "folison",
+              "count": 143
+            },
+            {
+              "name": "GlobiFer plus",
+              "count": 123
+            },
+            {
+              "name": "Calci Briozcal Tablets",
+              "count": 118
+            },
+            {
+              "name": "Folacid 5mg",
+              "count": 116
+            },
+            {
+              "name": "Ferlatum 15ml",
+              "count": 68
+            },
+            {
+              "name": "Calcium",
+              "count": 32
+            },
+            {
+              "name": "COLEDAN-D",
+              "count": 21
+            },
+            {
+              "name": "DEVIT-3",
+              "count": 17
+            },
+            {
+              "name": "Taurine",
+              "count": 14
+            },
+            {
+              "name": "Vitamin C",
+              "count": 9
+            },
+            {
+              "name": "CDR",
+              "count": 7
+            },
+            {
+              "name": "Biotin",
+              "count": 6
+            },
+            {
+              "name": "Calcium Ascorbate",
+              "count": 5
+            },
+            {
+              "name": "Natur-e 100IU",
+              "count": 5
+            },
+            {
+              "name": "IPI Vit B12",
+              "count": 4
+            },
+            {
+              "name": "CDR Fortos",
+              "count": 3
+            },
+            {
+              "name": "IPI Vit C",
+              "count": 3
+            },
+            {
+              "name": "IPI Vit D3 K2",
+              "count": 3
+            },
+            {
+              "name": "Natur-e White",
+              "count": 3
+            },
+            {
+              "name": "Prove D3",
+              "count": 3
+            },
+            {
+              "name": "Folic Acid",
+              "count": 2
+            },
+            {
+              "name": "Natur-e 300IU",
+              "count": 2
+            },
+            {
+              "name": "Nephrisol-D",
+              "count": 2
+            },
+            {
+              "name": "Sangobion",
+              "count": 2
+            },
+            {
+              "name": "Vitabumin",
+              "count": 2
+            },
+            {
+              "name": "Vitacimin",
+              "count": 2
+            },
+            {
+              "name": "Cal-95",
+              "count": 1
+            },
+            {
+              "name": "Ever E250",
+              "count": 1
+            },
+            {
+              "name": "Livron",
+              "count": 1
+            },
+            {
+              "name": "Natur-e Advanced",
+              "count": 1
+            },
+            {
+              "name": "Natur-e Daily Nourishing",
+              "count": 1
+            },
+            {
+              "name": "Redoxon",
+              "count": 1
+            },
+            {
+              "name": "Vicee",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "면역건강",
+          "n_classes": 7,
+          "n_instances": 438,
+          "classes": [
+            {
+              "name": "Tumeric 500",
+              "count": 410
+            },
+            {
+              "name": "Imboost Force",
+              "count": 7
+            },
+            {
+              "name": "Imboost Kids",
+              "count": 7
+            },
+            {
+              "name": "Imunped",
+              "count": 5
+            },
+            {
+              "name": "Imboost",
+              "count": 4
+            },
+            {
+              "name": "Stimuno",
+              "count": 3
+            },
+            {
+              "name": "Imboost Force Cough Kids",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "피임산과",
+      "n_classes": 11,
+      "n_instances": 510,
+      "mids": [
+        {
+          "name": "경구피임",
+          "n_classes": 2,
+          "n_instances": 277,
+          "classes": [
+            {
+              "name": "Marvelon",
+              "count": 152
+            },
+            {
+              "name": "Mercilon",
+              "count": 125
+            }
+          ]
+        },
+        {
+          "name": "산과기타",
+          "n_classes": 9,
+          "n_instances": 233,
+          "classes": [
+            {
+              "name": "Fluomizin 10mg",
+              "count": 120
+            },
+            {
+              "name": "Neotergynan",
+              "count": 103
+            },
+            {
+              "name": "Folamil Genio",
+              "count": 2
+            },
+            {
+              "name": "Lactaboost",
+              "count": 2
+            },
+            {
+              "name": "Sensitif Uji Kehamilan",
+              "count": 2
+            },
+            {
+              "name": "Andalan Ovulation Test",
+              "count": 1
+            },
+            {
+              "name": "Obimin",
+              "count": 1
+            },
+            {
+              "name": "Pregnabion",
+              "count": 1
+            },
+            {
+              "name": "Prenatal",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "정품위조",
+      "n_classes": 12,
+      "n_instances": 2253,
+      "mids": [
+        {
+          "name": "Alaxan",
+          "n_classes": 2,
+          "n_instances": 383,
+          "classes": [
+            {
+              "name": "Counterfeit-Alaxan",
+              "count": 202
+            },
+            {
+              "name": "Authentic-Alaxan",
+              "count": 181
+            }
+          ]
+        },
+        {
+          "name": "Bioflu",
+          "n_classes": 2,
+          "n_instances": 341,
+          "classes": [
+            {
+              "name": "Counterfeit-Bioflu",
+              "count": 192
+            },
+            {
+              "name": "Authentic-Bioflu",
+              "count": 149
+            }
+          ]
+        },
+        {
+          "name": "Biogesic",
+          "n_classes": 2,
+          "n_instances": 387,
+          "classes": [
+            {
+              "name": "Authentic_Biogesic",
+              "count": 274
+            },
+            {
+              "name": "Counterfeit_Biogesic",
+              "count": 113
+            }
+          ]
+        },
+        {
+          "name": "Decolgen",
+          "n_classes": 2,
+          "n_instances": 370,
+          "classes": [
+            {
+              "name": "Authentic-Decolgen",
+              "count": 200
+            },
+            {
+              "name": "Counterfeit-Decolgen",
+              "count": 170
+            }
+          ]
+        },
+        {
+          "name": "Medicol Advance",
+          "n_classes": 2,
+          "n_instances": 401,
+          "classes": [
+            {
+              "name": "Counterfeit-Medicol Advance",
+              "count": 357
+            },
+            {
+              "name": "Authentic -Medicol Advance",
+              "count": 44
+            }
+          ]
+        },
+        {
+          "name": "Neozep Forte",
+          "n_classes": 2,
+          "n_instances": 371,
+          "classes": [
+            {
+              "name": "Counterfeit-Neozep Forte",
+              "count": 201
+            },
+            {
+              "name": "Authentic-Neozep Forte",
+              "count": 170
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "한국식약처코드",
+      "n_classes": 53,
+      "n_instances": 4974,
+      "mids": [
+        {
+          "name": "식약처품목허가번호",
+          "n_classes": 53,
+          "n_instances": 4974,
+          "classes": [
+            {
+              "name": "201206715",
+              "count": 252
+            },
+            {
+              "name": "200902301",
+              "count": 198
+            },
+            {
+              "name": "199801026",
+              "count": 188
+            },
+            {
+              "name": "200906877",
+              "count": 164
+            },
+            {
+              "name": "201204389",
+              "count": 142
+            },
+            {
+              "name": "200806191",
+              "count": 138
+            },
+            {
+              "name": "201204330",
+              "count": 134
+            },
+            {
+              "name": "201203128",
+              "count": 130
+            },
+            {
+              "name": "200102527",
+              "count": 124
+            },
+            {
+              "name": "200801645",
+              "count": 118
+            },
+            {
+              "name": "200810700",
+              "count": 118
+            },
+            {
+              "name": "202106092",
+              "count": 113
+            },
+            {
+              "name": "201706946",
+              "count": 108
+            },
+            {
+              "name": "198900672",
+              "count": 104
+            },
+            {
+              "name": "200400463",
+              "count": 104
+            },
+            {
+              "name": "201003989",
+              "count": 104
+            },
+            {
+              "name": "201300035",
+              "count": 104
+            },
+            {
+              "name": "199901559",
+              "count": 102
+            },
+            {
+              "name": "200710782",
+              "count": 102
+            },
+            {
+              "name": "200901257",
+              "count": 102
+            },
+            {
+              "name": "201301591",
+              "count": 102
+            },
+            {
+              "name": "201500673",
+              "count": 102
+            },
+            {
+              "name": "200400485",
+              "count": 101
+            },
+            {
+              "name": "197900277",
+              "count": 100
+            },
+            {
+              "name": "198700405",
+              "count": 99
+            },
+            {
+              "name": "196800036",
+              "count": 98
+            },
+            {
+              "name": "198902527",
+              "count": 98
+            },
+            {
+              "name": "199400883",
+              "count": 98
+            },
+            {
+              "name": "202106954",
+              "count": 98
+            },
+            {
+              "name": "199600571",
+              "count": 96
+            },
+            {
+              "name": "200300406",
+              "count": 93
+            },
+            {
+              "name": "199303109",
+              "count": 91
+            },
+            {
+              "name": "200700547",
+              "count": 89
+            },
+            {
+              "name": "201802210",
+              "count": 88
+            },
+            {
+              "name": "202107327",
+              "count": 86
+            },
+            {
+              "name": "199902738",
+              "count": 84
+            },
+            {
+              "name": "201300036",
+              "count": 84
+            },
+            {
+              "name": "201300045",
+              "count": 84
+            },
+            {
+              "name": "200008591",
+              "count": 72
+            },
+            {
+              "name": "200610765",
+              "count": 59
+            },
+            {
+              "name": "201603303",
+              "count": 58
+            },
+            {
+              "name": "200102499",
+              "count": 56
+            },
+            {
+              "name": "197000053",
+              "count": 51
+            },
+            {
+              "name": "202001495",
+              "count": 50
+            },
+            {
+              "name": "201803439",
+              "count": 48
+            },
+            {
+              "name": "200202423",
+              "count": 45
+            },
+            {
+              "name": "201602703",
+              "count": 45
+            },
+            {
+              "name": "201300034",
+              "count": 40
+            },
+            {
+              "name": "200900740",
+              "count": 32
+            },
+            {
+              "name": "202008370",
+              "count": 28
+            },
+            {
+              "name": "200201403",
+              "count": 26
+            },
+            {
+              "name": "202003060",
+              "count": 18
+            },
+            {
+              "name": "200903973",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "기타",
+      "n_classes": 87,
+      "n_instances": 2057,
+      "mids": [
+        {
+          "name": "성분명만",
+          "n_classes": 44,
+          "n_instances": 742,
+          "classes": [
+            {
+              "name": "Tranexamic Acid",
+              "count": 245
+            },
+            {
+              "name": "Lysozyme Chloride",
+              "count": 115
+            },
+            {
+              "name": "Aescin",
+              "count": 51
+            },
+            {
+              "name": "Zinc",
+              "count": 47
+            },
+            {
+              "name": "Cassia Siamea",
+              "count": 36
+            },
+            {
+              "name": "Escin",
+              "count": 19
+            },
+            {
+              "name": "Eucalyptus oil",
+              "count": 19
+            },
+            {
+              "name": "Quercetin",
+              "count": 19
+            },
+            {
+              "name": "Propolis Extract",
+              "count": 18
+            },
+            {
+              "name": "Asafoetida and Alcohol",
+              "count": 15
+            },
+            {
+              "name": "L-cysteine",
+              "count": 14
+            },
+            {
+              "name": "Strong Ginger Tincture",
+              "count": 12
+            },
+            {
+              "name": "Caffeine",
+              "count": 10
+            },
+            {
+              "name": "Compound Cardamom Tincture",
+              "count": 10
+            },
+            {
+              "name": "Strong Capsicum Tincture",
+              "count": 10
+            },
+            {
+              "name": "Chamomile Extract",
+              "count": 8
+            },
+            {
+              "name": "Hydroxypropyl Methylcellulose",
+              "count": 8
+            },
+            {
+              "name": "Lemon Bioflavonoid Complex",
+              "count": 7
+            },
+            {
+              "name": "Marigold Extract",
+              "count": 7
+            },
+            {
+              "name": "Phenyl Salicylate",
+              "count": 7
+            },
+            {
+              "name": "Coptis Chinensis",
+              "count": 5
+            },
+            {
+              "name": "Pontirus Trifoliata",
+              "count": 5
+            },
+            {
+              "name": "Smilax Glabra",
+              "count": 5
+            },
+            {
+              "name": "Alumine",
+              "count": 4
+            },
+            {
+              "name": "Collagen",
+              "count": 4
+            },
+            {
+              "name": "Lecithin",
+              "count": 4
+            },
+            {
+              "name": "Licorice Extract",
+              "count": 4
+            },
+            {
+              "name": "Magnesia",
+              "count": 4
+            },
+            {
+              "name": "Lonicera japonica",
+              "count": 3
+            },
+            {
+              "name": "Mentha oil",
+              "count": 3
+            },
+            {
+              "name": "Mucopolysaccharide",
+              "count": 3
+            },
+            {
+              "name": "Spearmint oil",
+              "count": 3
+            },
+            {
+              "name": "Bilberry Extract",
+              "count": 2
+            },
+            {
+              "name": "Chloride",
+              "count": 2
+            },
+            {
+              "name": "Lonrcera Japonica",
+              "count": 2
+            },
+            {
+              "name": "Polyethylene Glycol",
+              "count": 2
+            },
+            {
+              "name": "Povidone",
+              "count": 2
+            },
+            {
+              "name": "Propylene Glycol",
+              "count": 2
+            },
+            {
+              "name": "Citrate Dihydrate",
+              "count": 1
+            },
+            {
+              "name": "Glucose Anhydrous",
+              "count": 1
+            },
+            {
+              "name": "Glycyrrhiza glabra L.",
+              "count": 1
+            },
+            {
+              "name": "Hyaluronate",
+              "count": 1
+            },
+            {
+              "name": "Phyllanthus emblica L.",
+              "count": 1
+            },
+            {
+              "name": "Zingiber officinale roxb.",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "브랜드미분류",
+          "n_classes": 39,
+          "n_instances": 1183,
+          "classes": [
+            {
+              "name": "Immucept 500",
+              "count": 179
+            },
+            {
+              "name": "Atova",
+              "count": 172
+            },
+            {
+              "name": "isoamrit",
+              "count": 146
+            },
+            {
+              "name": "Pac-Control",
+              "count": 136
+            },
+            {
+              "name": "easyn",
+              "count": 125
+            },
+            {
+              "name": "Nabifar 5g",
+              "count": 124
+            },
+            {
+              "name": "Daikyn 0.5mg",
+              "count": 120
+            },
+            {
+              "name": "al eartone",
+              "count": 117
+            },
+            {
+              "name": "Egoji",
+              "count": 12
+            },
+            {
+              "name": "Kanna",
+              "count": 7
+            },
+            {
+              "name": "Jointfit",
+              "count": 5
+            },
+            {
+              "name": "Pasaba",
+              "count": 5
+            },
+            {
+              "name": "Lafalos",
+              "count": 3
+            },
+            {
+              "name": "Darsi",
+              "count": 2
+            },
+            {
+              "name": "Entramix",
+              "count": 2
+            },
+            {
+              "name": "Lytacur",
+              "count": 2
+            },
+            {
+              "name": "Obana",
+              "count": 2
+            },
+            {
+              "name": "Pratifar",
+              "count": 2
+            },
+            {
+              "name": "Prome",
+              "count": 2
+            },
+            {
+              "name": "Dipsamol",
+              "count": 1
+            },
+            {
+              "name": "Elzsa",
+              "count": 1
+            },
+            {
+              "name": "Gestin F3",
+              "count": 1
+            },
+            {
+              "name": "Inxilon",
+              "count": 1
+            },
+            {
+              "name": "Kalcinol N",
+              "count": 1
+            },
+            {
+              "name": "Kamolas",
+              "count": 1
+            },
+            {
+              "name": "L-bio",
+              "count": 1
+            },
+            {
+              "name": "Morifit",
+              "count": 1
+            },
+            {
+              "name": "Neosma",
+              "count": 1
+            },
+            {
+              "name": "Nisagon",
+              "count": 1
+            },
+            {
+              "name": "Nitacur",
+              "count": 1
+            },
+            {
+              "name": "Norti",
+              "count": 1
+            },
+            {
+              "name": "Novadex",
+              "count": 1
+            },
+            {
+              "name": "Obasa",
+              "count": 1
+            },
+            {
+              "name": "Oxycan",
+              "count": 1
+            },
+            {
+              "name": "Paratenza",
+              "count": 1
+            },
+            {
+              "name": "Pondex Forte",
+              "count": 1
+            },
+            {
+              "name": "Primadex",
+              "count": 1
+            },
+            {
+              "name": "Pronicy",
+              "count": 1
+            },
+            {
+              "name": "Seloxy",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "비의약품",
+          "n_classes": 4,
+          "n_instances": 132,
+          "classes": [
+            {
+              "name": "su",
+              "count": 129
+            },
+            {
+              "name": "Carbamate Insecticides",
+              "count": 1
+            },
+            {
+              "name": "Medicine-detection",
+              "count": 1
+            },
+            {
+              "name": "Tissue Lovers",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit_moves": [
+    {
+      "name": "Panadol Cold Flu",
+      "count": 138,
+      "from": "해열진통소염/Paracetamol계",
+      "to": "호흡기감기/종합감기",
+      "reason": "복합 감기약"
+    },
+    {
+      "name": "Panadol Flu Batuk",
+      "count": 7,
+      "from": "해열진통소염/Paracetamol계",
+      "to": "호흡기감기/종합감기",
+      "reason": "복합 감기약"
+    },
+    {
+      "name": "판피린티정",
+      "count": 41,
+      "from": "해열진통소염/기타진통",
+      "to": "호흡기감기/종합감기",
+      "reason": "한국 종합감기"
+    },
+    {
+      "name": "Salmeterol",
+      "count": 12,
+      "from": "호르몬내분비/기타내분비",
+      "to": "호흡기감기/기타호흡기",
+      "reason": "흡입 기관지확장"
+    },
+    {
+      "name": "Budesonide",
+      "count": 12,
+      "from": "호르몬내분비/스테로이드",
+      "to": "호흡기감기/기타호흡기",
+      "reason": "흡입 스테로이드"
+    },
+    {
+      "name": "Fluticasone Propionate",
+      "count": 12,
+      "from": "호르몬내분비/스테로이드",
+      "to": "호흡기감기/기타호흡기",
+      "reason": "흡입 스테로이드"
+    },
+    {
+      "name": "Betamethasone Valerate",
+      "count": 72,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "Desoximetasone",
+      "count": 45,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "Clobetasol Propionate",
+      "count": 38,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "Fluocinolone Acetonide",
+      "count": 15,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "Betamethasone Dipropionate",
+      "count": 11,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "Mometasone Furoate",
+      "count": 8,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "Kenalog",
+      "count": 1,
+      "from": "호르몬내분비/스테로이드",
+      "to": "피부외용/스테로이드외용",
+      "reason": "외용 스테로이드"
+    },
+    {
+      "name": "ByeBye Fever",
+      "count": 9,
+      "from": "해열진통소염/기타진통",
+      "to": "피부외용/파스외용",
+      "reason": "해열 패치"
+    },
+    {
+      "name": "Tumeric 500",
+      "count": 410,
+      "from": "기타/성분명만",
+      "to": "비타민영양/면역건강",
+      "reason": "건강기능/강황"
+    },
+    {
+      "name": "Leflunomide",
+      "count": 20,
+      "from": "기타/브랜드미분류",
+      "to": "해열진통소염/기타진통",
+      "reason": "항류마티스"
+    },
+    {
+      "name": "pepfamin",
+      "count": 346,
+      "from": "기타/브랜드미분류",
+      "to": "소화기/제산궤양",
+      "reason": "파모티딘 브랜드"
+    },
+    {
+      "name": "Angenta",
+      "count": 171,
+      "from": "기타/브랜드미분류",
+      "to": "신경정신/항우울항정신",
+      "reason": "플루펜틱솔+멜리트라센"
+    },
+    {
+      "name": "Methyl Salicylate",
+      "count": 123,
+      "from": "기타/성분명만",
+      "to": "피부외용/파스외용",
+      "reason": "외용 자극진통 성분"
+    },
+    {
+      "name": "Menthol",
+      "count": 63,
+      "from": "기타/성분명만",
+      "to": "피부외용/파스외용",
+      "reason": "외용 자극진통 성분"
+    },
+    {
+      "name": "Levomenthol",
+      "count": 104,
+      "from": "기타/성분명만",
+      "to": "피부외용/파스외용",
+      "reason": "외용 자극진통 성분"
+    },
+    {
+      "name": "Camphor",
+      "count": 29,
+      "from": "기타/성분명만",
+      "to": "피부외용/파스외용",
+      "reason": "외용 자극진통 성분"
+    },
+    {
+      "name": "Eugenol",
+      "count": 125,
+      "from": "기타/성분명만",
+      "to": "피부외용/파스외용",
+      "reason": "외용 자극진통 성분"
+    },
+    {
+      "name": "Salol and Menthol",
+      "count": 38,
+      "from": "기타/성분명만",
+      "to": "피부외용/파스외용",
+      "reason": "외용 자극진통 성분"
+    },
+    {
+      "name": "Ace XR",
+      "count": 268,
+      "from": "해열진통소염/기타진통",
+      "to": "해열진통소염/Paracetamol계",
+      "reason": "Ace XR = paracetamol 665mg ER"
+    }
+  ]
+}

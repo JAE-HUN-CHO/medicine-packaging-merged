@@ -1,0 +1,47 @@
+{
+  "training_id": "2c3b3ee56385c34d5926",
+  "model_type": "rfdetr-medium",
+  "model_type_requested": "rfdetr-nas-parent",
+  "nas_fallback": true,
+  "nas_error": {
+    "message": "Training has not started: Neural Architecture Search is not available on your current plan. Upgrade to Core or Growth, then request training again.",
+    "code": "nas_not_available_for_plan",
+    "plan": "trial",
+    "support_ref": "d518af51c46088a40021729c87b177eb"
+  },
+  "status": "running",
+  "urls": {
+    "version": "https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/3"
+  },
+  "project_id": "medicine-packaging-merged-v2",
+  "workspace": "toyproject1",
+  "version_number": 3,
+  "export": {
+    "format": "coco",
+    "ready": true,
+    "progress": 1,
+    "size_mb": 6857.392204
+  },
+  "trainings_create_response": {
+    "trainingId": "2c3b3ee56385c34d5926",
+    "status": "running",
+    "project_id": "medicine-packaging-merged-v2",
+    "version": 3,
+    "url": "https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/3",
+    "message": "Training has been created. Monitor progress with trainings_get(project_id, version_number, training_id) or at the URL above. Training can take minutes to hours depending on dataset size and model type."
+  },
+  "trainings_get_response": {
+    "trainingId": "2c3b3ee56385c34d5926",
+    "versionId": "3",
+    "status": "running",
+    "start": 1786681278395,
+    "end": null,
+    "jobType": "fine-tune",
+    "modelType": "rfdetr-medium",
+    "modelGroup": null,
+    "modelCount": 0,
+    "models": [],
+    "createdAt": "2026-08-14T04:21:18.395000Z"
+  },
+  "notes": "NAS (rfdetr-nas-parent) rejected with nas_not_available_for_plan on trial plan. Did not retry NAS. Fell back once to rfdetr-medium. Training created and is running. Prior coco export wait: first poll progress 0.2, then 0.79, then ready=true progress=1."
+}

@@ -1,0 +1,743 @@
+{
+  "drop": [
+    "Back",
+    "Durex Close Fit 3",
+    "Durex Extra Safe",
+    "Durex Extra Safe 12",
+    "Durex Invisible 3",
+    "Durex Performa 3",
+    "Fiesta Banana 3",
+    "Fiesta Black Coffee 3",
+    "Fiesta Bubble Gum 3",
+    "Fiesta Delay 3",
+    "Fiesta Durian 3",
+    "Fiesta Grape 3",
+    "Fiesta Party Pack 12",
+    "Fiesta Strawberry 12",
+    "Fiesta Strawberry 3",
+    "Fiesta Ultra Safe",
+    "Fiesta Ultra Thin 3",
+    "Front",
+    "Kondom Andalan 12",
+    "Sutra 12",
+    "Sutra 24",
+    "Sutra 3",
+    "Sutra Gerigi 12",
+    "Sutra Gerigi 3",
+    "Sutra OK",
+    "Sutra OK 12",
+    "Sutra OK 24",
+    "Sutra OK 3"
+  ],
+  "merge": {
+    "Agidopa Methyldopa 250mg_Box": "Agidopa Methyldopa 250mg",
+    "Alpha Choay 4200IU_Box": "Alpha Choay 4200IU",
+    "Aspirin 81mg_Blister": "Aspirin 81mg",
+    "Aspirin 81mg_Box": "Aspirin 81mg",
+    "Augmentin 1g_Box": "Augmentin 1g",
+    "Augmentin 1g_Pack": "Augmentin 1g",
+    "Berocca_Box": "Berocca",
+    "Calci Briozcal Tablets_Blister": "Calci Briozcal Tablets",
+    "Calci Briozcal Tablets_Box": "Calci Briozcal Tablets",
+    "Canesten Cream 20g_Box": "Canesten Cream 20g",
+    "Cataflam 50mg_Blister": "Cataflam 50mg",
+    "Cataflam 50mg_Box": "Cataflam 50mg",
+    "Cefixim 200mg_Blister": "Cefixim 200mg",
+    "Cefixim 200mg_Box": "Cefixim 200mg",
+    "Ciprofloxacin 500mg_Box": "Ciprofloxacin 500mg",
+    "Cyclogest 400mg_Blister": "Cyclogest 400mg",
+    "Cyclogest 400mg_Box": "Cyclogest 400mg",
+    "Daikyn 0.5mg_Blister": "Daikyn 0.5mg",
+    "Daikyn 0.5mg_Box": "Daikyn 0.5mg",
+    "Doxycyclin 100mg_Blister": "Doxycyclin 100mg",
+    "Doxycyclin 100mg_Box": "Doxycyclin 100mg",
+    "Exomuc 20mg_Box": "Exomuc 20mg",
+    "Exomuc 20mg_Pack": "Exomuc 20mg",
+    "Femara 2.5mg_Box": "Femara 2.5mg",
+    "Ferlatum 15ml_Box": "Ferlatum 15ml",
+    "Fluconazole 150mg_Box": "Fluconazole 150mg",
+    "Fluomizin 10mg_Blister": "Fluomizin 10mg",
+    "Fluomizin 10mg_Box": "Fluomizin 10mg",
+    "Folacid 5mg_Blister": "Folacid 5mg",
+    "Folacid 5mg_Box": "Folacid 5mg",
+    "Gentrison_Box": "Gentrison",
+    "GlobiFer plus_Blister": "GlobiFer plus",
+    "GlobiFer plus_Box": "GlobiFer plus",
+    "Hydrocortisone": "hydrocortisone",
+    "Licorice extract": "Licorice Extract",
+    "Lomac 20mg_Blister": "Lomac 20mg",
+    "Lomac 20mg_Box": "Lomac 20mg",
+    "Marvelon_Box": "Marvelon",
+    "Marvelon_Pack": "Marvelon",
+    "Mercilon_Box": "Mercilon",
+    "Mercilon_Pack": "Mercilon",
+    "Metronidazol 250mg_Blister": "Metronidazol 250mg",
+    "Metronidazol 250mg_Box": "Metronidazol 250mg",
+    "Misoprostol200_Blister": "Misoprostol200",
+    "Misoprostol200_Box": "Misoprostol200",
+    "Nabifar 5g_Box": "Nabifar 5g",
+    "Nabifar 5g_Pack": "Nabifar 5g",
+    "Nautamine 90mg_Box": "Nautamine 90mg",
+    "Nautamine 90mg_Pack": "Nautamine 90mg",
+    "Neotergynan_Box": "Neotergynan",
+    "Neotergynan_Pack": "Neotergynan",
+    "No Spa Forte 80mg_Blister": "No Spa Forte 80mg",
+    "No Spa Forte 80mg_Box": "No Spa Forte 80mg",
+    "Pac-Control_Box": "Pac-Control",
+    "Pac-Control_Pack": "Pac-Control",
+    "Poldan Mig": "Poldan MIG",
+    "Prednison 5mg_Blister": "Prednison 5mg",
+    "Prednison 5mg_Box": "Prednison 5mg",
+    "Propolis extract": "Propolis Extract",
+    "Sporal 100mg_Blister": "Sporal 100mg",
+    "Sporal 100mg_Box": "Sporal 100mg",
+    "Sulorim_Box": "Sulorim",
+    "Telfast 180mg_Blister": "Telfast 180mg",
+    "Telfast 180mg_Box": "Telfast 180mg",
+    "Utrogestan 200mg_Blister": "Utrogestan 200mg",
+    "Valiera 2mg_Blister": "Valiera 2mg",
+    "Valiera 2mg_Box": "Valiera 2mg",
+    "Voltaren 100mg_Blister": "Voltaren 100mg",
+    "Voltaren 100mg_Box": "Voltaren 100mg",
+    "ibuprofen": "Ibuprofen",
+    "ketoconazole": "Ketoconazole",
+    "losartan": "Losartan",
+    "metformin": "Metformin",
+    "타이레놀": "Tylenol"
+  },
+  "summary": {
+    "n_before": 758,
+    "n_drop": 28,
+    "n_merge_sources": 74,
+    "n_merge_targets": 47,
+    "n_after_estimate": 694,
+    "drop_instances": 2278,
+    "merge_groups": {
+      "Metformin": {
+        "target": "Metformin",
+        "target_existing": 755,
+        "sources": [
+          {
+            "name": "metformin",
+            "count": 62
+          }
+        ],
+        "combined": 817
+      },
+      "Losartan": {
+        "target": "Losartan",
+        "target_existing": 458,
+        "sources": [
+          {
+            "name": "losartan",
+            "count": 219
+          }
+        ],
+        "combined": 677
+      },
+      "Ibuprofen": {
+        "target": "Ibuprofen",
+        "target_existing": 226,
+        "sources": [
+          {
+            "name": "ibuprofen",
+            "count": 203
+          }
+        ],
+        "combined": 429
+      },
+      "Ketoconazole": {
+        "target": "Ketoconazole",
+        "target_existing": 255,
+        "sources": [
+          {
+            "name": "ketoconazole",
+            "count": 91
+          }
+        ],
+        "combined": 346
+      },
+      "Tylenol": {
+        "target": "Tylenol",
+        "target_existing": 228,
+        "sources": [
+          {
+            "name": "타이레놀",
+            "count": 113
+          }
+        ],
+        "combined": 341
+      },
+      "Marvelon": {
+        "target": "Marvelon",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Marvelon_Box",
+            "count": 90
+          },
+          {
+            "name": "Marvelon_Pack",
+            "count": 62
+          }
+        ],
+        "combined": 152
+      },
+      "hydrocortisone": {
+        "target": "hydrocortisone",
+        "target_existing": 131,
+        "sources": [
+          {
+            "name": "Hydrocortisone",
+            "count": 15
+          }
+        ],
+        "combined": 146
+      },
+      "Pac-Control": {
+        "target": "Pac-Control",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Pac-Control_Box",
+            "count": 86
+          },
+          {
+            "name": "Pac-Control_Pack",
+            "count": 50
+          }
+        ],
+        "combined": 136
+      },
+      "Cefixim 200mg": {
+        "target": "Cefixim 200mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Cefixim 200mg_Box",
+            "count": 90
+          },
+          {
+            "name": "Cefixim 200mg_Blister",
+            "count": 46
+          }
+        ],
+        "combined": 136
+      },
+      "Doxycyclin 100mg": {
+        "target": "Doxycyclin 100mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Doxycyclin 100mg_Box",
+            "count": 82
+          },
+          {
+            "name": "Doxycyclin 100mg_Blister",
+            "count": 50
+          }
+        ],
+        "combined": 132
+      },
+      "Augmentin 1g": {
+        "target": "Augmentin 1g",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Augmentin 1g_Box",
+            "count": 93
+          },
+          {
+            "name": "Augmentin 1g_Pack",
+            "count": 37
+          }
+        ],
+        "combined": 130
+      },
+      "Voltaren 100mg": {
+        "target": "Voltaren 100mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Voltaren 100mg_Box",
+            "count": 88
+          },
+          {
+            "name": "Voltaren 100mg_Blister",
+            "count": 41
+          }
+        ],
+        "combined": 129
+      },
+      "No Spa Forte 80mg": {
+        "target": "No Spa Forte 80mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "No Spa Forte 80mg_Box",
+            "count": 84
+          },
+          {
+            "name": "No Spa Forte 80mg_Blister",
+            "count": 43
+          }
+        ],
+        "combined": 127
+      },
+      "Mercilon": {
+        "target": "Mercilon",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Mercilon_Box",
+            "count": 87
+          },
+          {
+            "name": "Mercilon_Pack",
+            "count": 38
+          }
+        ],
+        "combined": 125
+      },
+      "Nabifar 5g": {
+        "target": "Nabifar 5g",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Nabifar 5g_Box",
+            "count": 82
+          },
+          {
+            "name": "Nabifar 5g_Pack",
+            "count": 42
+          }
+        ],
+        "combined": 124
+      },
+      "Cyclogest 400mg": {
+        "target": "Cyclogest 400mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Cyclogest 400mg_Box",
+            "count": 77
+          },
+          {
+            "name": "Cyclogest 400mg_Blister",
+            "count": 47
+          }
+        ],
+        "combined": 124
+      },
+      "GlobiFer plus": {
+        "target": "GlobiFer plus",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "GlobiFer plus_Box",
+            "count": 82
+          },
+          {
+            "name": "GlobiFer plus_Blister",
+            "count": 41
+          }
+        ],
+        "combined": 123
+      },
+      "Nautamine 90mg": {
+        "target": "Nautamine 90mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Nautamine 90mg_Box",
+            "count": 82
+          },
+          {
+            "name": "Nautamine 90mg_Pack",
+            "count": 40
+          }
+        ],
+        "combined": 122
+      },
+      "Metronidazol 250mg": {
+        "target": "Metronidazol 250mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Metronidazol 250mg_Box",
+            "count": 73
+          },
+          {
+            "name": "Metronidazol 250mg_Blister",
+            "count": 48
+          }
+        ],
+        "combined": 121
+      },
+      "Fluomizin 10mg": {
+        "target": "Fluomizin 10mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Fluomizin 10mg_Box",
+            "count": 71
+          },
+          {
+            "name": "Fluomizin 10mg_Blister",
+            "count": 49
+          }
+        ],
+        "combined": 120
+      },
+      "Daikyn 0.5mg": {
+        "target": "Daikyn 0.5mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Daikyn 0.5mg_Box",
+            "count": 80
+          },
+          {
+            "name": "Daikyn 0.5mg_Blister",
+            "count": 40
+          }
+        ],
+        "combined": 120
+      },
+      "Cataflam 50mg": {
+        "target": "Cataflam 50mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Cataflam 50mg_Box",
+            "count": 71
+          },
+          {
+            "name": "Cataflam 50mg_Blister",
+            "count": 49
+          }
+        ],
+        "combined": 120
+      },
+      "Calci Briozcal Tablets": {
+        "target": "Calci Briozcal Tablets",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Calci Briozcal Tablets_Box",
+            "count": 74
+          },
+          {
+            "name": "Calci Briozcal Tablets_Blister",
+            "count": 44
+          }
+        ],
+        "combined": 118
+      },
+      "Folacid 5mg": {
+        "target": "Folacid 5mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Folacid 5mg_Box",
+            "count": 87
+          },
+          {
+            "name": "Folacid 5mg_Blister",
+            "count": 29
+          }
+        ],
+        "combined": 116
+      },
+      "Sporal 100mg": {
+        "target": "Sporal 100mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Sporal 100mg_Box",
+            "count": 74
+          },
+          {
+            "name": "Sporal 100mg_Blister",
+            "count": 42
+          }
+        ],
+        "combined": 116
+      },
+      "Valiera 2mg": {
+        "target": "Valiera 2mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Valiera 2mg_Box",
+            "count": 74
+          },
+          {
+            "name": "Valiera 2mg_Blister",
+            "count": 41
+          }
+        ],
+        "combined": 115
+      },
+      "Aspirin 81mg": {
+        "target": "Aspirin 81mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Aspirin 81mg_Box",
+            "count": 79
+          },
+          {
+            "name": "Aspirin 81mg_Blister",
+            "count": 30
+          }
+        ],
+        "combined": 109
+      },
+      "Neotergynan": {
+        "target": "Neotergynan",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Neotergynan_Box",
+            "count": 67
+          },
+          {
+            "name": "Neotergynan_Pack",
+            "count": 36
+          }
+        ],
+        "combined": 103
+      },
+      "Poldan MIG": {
+        "target": "Poldan MIG",
+        "target_existing": 100,
+        "sources": [
+          {
+            "name": "Poldan Mig",
+            "count": 1
+          }
+        ],
+        "combined": 101
+      },
+      "Misoprostol200": {
+        "target": "Misoprostol200",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Misoprostol200_Box",
+            "count": 68
+          },
+          {
+            "name": "Misoprostol200_Blister",
+            "count": 31
+          }
+        ],
+        "combined": 99
+      },
+      "Telfast 180mg": {
+        "target": "Telfast 180mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Telfast 180mg_Box",
+            "count": 65
+          },
+          {
+            "name": "Telfast 180mg_Blister",
+            "count": 32
+          }
+        ],
+        "combined": 97
+      },
+      "Exomuc 20mg": {
+        "target": "Exomuc 20mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Exomuc 20mg_Box",
+            "count": 62
+          },
+          {
+            "name": "Exomuc 20mg_Pack",
+            "count": 35
+          }
+        ],
+        "combined": 97
+      },
+      "Lomac 20mg": {
+        "target": "Lomac 20mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Lomac 20mg_Box",
+            "count": 67
+          },
+          {
+            "name": "Lomac 20mg_Blister",
+            "count": 29
+          }
+        ],
+        "combined": 96
+      },
+      "Prednison 5mg": {
+        "target": "Prednison 5mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Prednison 5mg_Box",
+            "count": 64
+          },
+          {
+            "name": "Prednison 5mg_Blister",
+            "count": 28
+          }
+        ],
+        "combined": 92
+      },
+      "Sulorim": {
+        "target": "Sulorim",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Sulorim_Box",
+            "count": 87
+          }
+        ],
+        "combined": 87
+      },
+      "Femara 2.5mg": {
+        "target": "Femara 2.5mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Femara 2.5mg_Box",
+            "count": 78
+          }
+        ],
+        "combined": 78
+      },
+      "Canesten Cream 20g": {
+        "target": "Canesten Cream 20g",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Canesten Cream 20g_Box",
+            "count": 76
+          }
+        ],
+        "combined": 76
+      },
+      "Alpha Choay 4200IU": {
+        "target": "Alpha Choay 4200IU",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Alpha Choay 4200IU_Box",
+            "count": 75
+          }
+        ],
+        "combined": 75
+      },
+      "Berocca": {
+        "target": "Berocca",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Berocca_Box",
+            "count": 72
+          }
+        ],
+        "combined": 72
+      },
+      "Agidopa Methyldopa 250mg": {
+        "target": "Agidopa Methyldopa 250mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Agidopa Methyldopa 250mg_Box",
+            "count": 71
+          }
+        ],
+        "combined": 71
+      },
+      "Ferlatum 15ml": {
+        "target": "Ferlatum 15ml",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Ferlatum 15ml_Box",
+            "count": 68
+          }
+        ],
+        "combined": 68
+      },
+      "Gentrison": {
+        "target": "Gentrison",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Gentrison_Box",
+            "count": 68
+          }
+        ],
+        "combined": 68
+      },
+      "Fluconazole 150mg": {
+        "target": "Fluconazole 150mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Fluconazole 150mg_Box",
+            "count": 66
+          }
+        ],
+        "combined": 66
+      },
+      "Ciprofloxacin 500mg": {
+        "target": "Ciprofloxacin 500mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Ciprofloxacin 500mg_Box",
+            "count": 64
+          }
+        ],
+        "combined": 64
+      },
+      "Utrogestan 200mg": {
+        "target": "Utrogestan 200mg",
+        "target_existing": 0,
+        "sources": [
+          {
+            "name": "Utrogestan 200mg_Blister",
+            "count": 38
+          }
+        ],
+        "combined": 38
+      },
+      "Propolis Extract": {
+        "target": "Propolis Extract",
+        "target_existing": 17,
+        "sources": [
+          {
+            "name": "Propolis extract",
+            "count": 1
+          }
+        ],
+        "combined": 18
+      },
+      "Licorice Extract": {
+        "target": "Licorice Extract",
+        "target_existing": 3,
+        "sources": [
+          {
+            "name": "Licorice extract",
+            "count": 1
+          }
+        ],
+        "combined": 4
+      }
+    }
+  }
+}

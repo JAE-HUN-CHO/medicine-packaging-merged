@@ -1,0 +1,71 @@
+{
+  "ok": true,
+  "project_id": "medicine-packaging-merged-v2",
+  "url": "https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2",
+  "version_number": 3,
+  "version_id": "toyproject1/medicine-packaging-merged-v2/3",
+  "name": "2026-08-14 4:08am",
+  "created_utc": "2026-08-14T04:08:45.443000+00:00",
+  "created_kst": "2026-08-14 13:08:45 KST",
+  "images": 28119,
+  "splits": {
+    "train": 22715,
+    "valid": 2983,
+    "test": 2421
+  },
+  "n_classes": 75,
+  "n_classes_source": "unique non-empty remap targets in payload (API versions_get did not return version-level class counts)",
+  "ready": true,
+  "generating": false,
+  "progress": 1,
+  "pepfamin_remap": "제산궤양",
+  "notes": [
+    "Live classes confirmed pepfamin present (346) and pepsfamin absent; all 758 remap keys matched live classes 1:1.",
+    "First generate created version 2 with corrupted Korean remap targets (제산권양 / 늹뇨-브랜드). Version 2 was soft-deleted to Trash.",
+    "Retried versions_generate with exact payload file; version 3 stored correct 제산궤양 and 당뇨-브랜드, including pepfamin → 제산궤양.",
+    "projects_get still lists source-project classes (758), not remapped version classes."
+  ],
+  "raw": {
+    "versions_generate": {
+      "version_number": "3",
+      "id": "toyproject1/medicine-packaging-merged-v2/3",
+      "name": "2026-08-14 4:08am",
+      "images": 0,
+      "splits": {}
+    },
+    "versions_get_ready": {
+      "id": "toyproject1/medicine-packaging-merged-v2/3",
+      "name": "2026-08-14 4:08am",
+      "version": 3,
+      "images": 28119,
+      "splits": {
+        "valid": 2983,
+        "test": 2421,
+        "train": 22715
+      },
+      "generating": false,
+      "progress": 1,
+      "ready": true,
+      "created": "1786680525.443",
+      "trainings": [],
+      "preprocessing_keys": [
+        "auto-orient",
+        "filter-null",
+        "remap"
+      ],
+      "remap_label_count": 758,
+      "pepfamin_override": "제산궤양",
+      "Glycediab_override": "당뇨-브랜드",
+      "Simethicone_override": "제산궤양"
+    },
+    "versions_delete_v2": {
+      "deleted": true,
+      "type": "version",
+      "workspace": "toyproject1",
+      "project": "medicine-packaging-merged-v2",
+      "projectId": "6TgWO0fnwtKsAXmWuP1i",
+      "version": "2",
+      "trash": true
+    }
+  }
+}

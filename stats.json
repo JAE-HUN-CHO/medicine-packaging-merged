@@ -1,0 +1,2654 @@
+{
+  "project_id": "toyproject1/medicine-packaging-merged-v2",
+  "n_images": 28297,
+  "unannotated": 0,
+  "splits": {
+    "counts": {
+      "train": 22890,
+      "valid": 2984,
+      "test": 2423
+    },
+    "percents": {
+      "train": 80.89196734636181,
+      "valid": 10.545287486305968,
+      "test": 8.562745167332226
+    },
+    "sum": 28297
+  },
+  "n_classes": 758,
+  "total_annotation_instances": 51520,
+  "annotations_per_image": 1.8206877054104675,
+  "class_count_distribution": {
+    "min": 1,
+    "p25": 2.0,
+    "median": 17.0,
+    "p75": 91.0,
+    "max": 1353,
+    "mean": 67.96833773087072
+  },
+  "class_count_buckets": {
+    "1": {
+      "n_classes": 114,
+      "n_instances": 114,
+      "pct_classes": 15.03957783641161
+    },
+    "2-5": {
+      "n_classes": 184,
+      "n_instances": 527,
+      "pct_classes": 24.274406332453825
+    },
+    "6-20": {
+      "n_classes": 96,
+      "n_instances": 1067,
+      "pct_classes": 12.664907651715039
+    },
+    "21-100": {
+      "n_classes": 188,
+      "n_instances": 11006,
+      "pct_classes": 24.80211081794195
+    },
+    "101-500": {
+      "n_classes": 166,
+      "n_instances": 30216,
+      "pct_classes": 21.899736147757256
+    },
+    "500+": {
+      "n_classes": 10,
+      "n_instances": 8590,
+      "pct_classes": 1.3192612137203166
+    }
+  },
+  "top20_classes": [
+    {
+      "name": "Back",
+      "count": 1353
+    },
+    {
+      "name": "Paracetamol",
+      "count": 1142
+    },
+    {
+      "name": "Amlodipine",
+      "count": 1066
+    },
+    {
+      "name": "Front",
+      "count": 889
+    },
+    {
+      "name": "Crocin",
+      "count": 840
+    },
+    {
+      "name": "Metformin",
+      "count": 755
+    },
+    {
+      "name": "Allopurinol",
+      "count": 690
+    },
+    {
+      "name": "Naproxen",
+      "count": 666
+    },
+    {
+      "name": "Glimepiride",
+      "count": 624
+    },
+    {
+      "name": "Simethicone",
+      "count": 565
+    },
+    {
+      "name": "Telmisartan",
+      "count": 477
+    },
+    {
+      "name": "Losartan",
+      "count": 458
+    },
+    {
+      "name": "Isosorbide Dinitrate",
+      "count": 452
+    },
+    {
+      "name": "Calpol",
+      "count": 436
+    },
+    {
+      "name": "Glipizide",
+      "count": 431
+    },
+    {
+      "name": "Dicloxacillin",
+      "count": 418
+    },
+    {
+      "name": "Tumeric 500",
+      "count": 410
+    },
+    {
+      "name": "Dolo-650",
+      "count": 391
+    },
+    {
+      "name": "sefloc",
+      "count": 386
+    },
+    {
+      "name": "Simvastatin",
+      "count": 385
+    }
+  ],
+  "bottom30_classes": [
+    {
+      "name": "Andalan Ovulation Test",
+      "count": 1
+    },
+    {
+      "name": "Antiflatulence",
+      "count": 1
+    },
+    {
+      "name": "Bepanthen",
+      "count": 1
+    },
+    {
+      "name": "Bio-Oil",
+      "count": 1
+    },
+    {
+      "name": "Biolgesic Paracetamol",
+      "count": 1
+    },
+    {
+      "name": "Bodrexin",
+      "count": 1
+    },
+    {
+      "name": "CIPROFLOXACIN",
+      "count": 1
+    },
+    {
+      "name": "Cal-95",
+      "count": 1
+    },
+    {
+      "name": "Carbamate Insecticides",
+      "count": 1
+    },
+    {
+      "name": "Citrate Dihydrate",
+      "count": 1
+    },
+    {
+      "name": "Combantrin",
+      "count": 1
+    },
+    {
+      "name": "Counterpain Cool",
+      "count": 1
+    },
+    {
+      "name": "Curvit",
+      "count": 1
+    },
+    {
+      "name": "Diapet",
+      "count": 1
+    },
+    {
+      "name": "Dichlorobenzyl Alcohol",
+      "count": 1
+    },
+    {
+      "name": "Dipsamol",
+      "count": 1
+    },
+    {
+      "name": "Dulcolax",
+      "count": 1
+    },
+    {
+      "name": "Durex Extra Safe",
+      "count": 1
+    },
+    {
+      "name": "Durex Extra Safe 12",
+      "count": 1
+    },
+    {
+      "name": "Durex Invisible 3",
+      "count": 1
+    },
+    {
+      "name": "Durex Performa 3",
+      "count": 1
+    },
+    {
+      "name": "Elzsa",
+      "count": 1
+    },
+    {
+      "name": "Ever E250",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Banana 3",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Black Coffee 3",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Bubble Gum 3",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Delay 3",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Grape 3",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Party Pack 12",
+      "count": 1
+    },
+    {
+      "name": "Fiesta Strawberry 12",
+      "count": 1
+    }
+  ],
+  "case_collision_pairs": [
+    {
+      "normalized": "metformin",
+      "variants": [
+        {
+          "name": "Metformin",
+          "count": 755
+        },
+        {
+          "name": "metformin",
+          "count": 62
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 817
+    },
+    {
+      "normalized": "losartan",
+      "variants": [
+        {
+          "name": "Losartan",
+          "count": 458
+        },
+        {
+          "name": "losartan",
+          "count": 219
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 677
+    },
+    {
+      "normalized": "ibuprofen",
+      "variants": [
+        {
+          "name": "Ibuprofen",
+          "count": 226
+        },
+        {
+          "name": "ibuprofen",
+          "count": 203
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 429
+    },
+    {
+      "normalized": "ketoconazole",
+      "variants": [
+        {
+          "name": "Ketoconazole",
+          "count": 255
+        },
+        {
+          "name": "ketoconazole",
+          "count": 91
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 346
+    },
+    {
+      "normalized": "hydrocortisone",
+      "variants": [
+        {
+          "name": "hydrocortisone",
+          "count": 131
+        },
+        {
+          "name": "Hydrocortisone",
+          "count": 15
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 146
+    },
+    {
+      "normalized": "poldan mig",
+      "variants": [
+        {
+          "name": "Poldan MIG",
+          "count": 100
+        },
+        {
+          "name": "Poldan Mig",
+          "count": 1
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 101
+    },
+    {
+      "normalized": "propolis extract",
+      "variants": [
+        {
+          "name": "Propolis Extract",
+          "count": 17
+        },
+        {
+          "name": "Propolis extract",
+          "count": 1
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 18
+    },
+    {
+      "normalized": "licorice extract",
+      "variants": [
+        {
+          "name": "Licorice Extract",
+          "count": 3
+        },
+        {
+          "name": "Licorice extract",
+          "count": 1
+        }
+      ],
+      "n_variants": 2,
+      "combined_count": 4
+    }
+  ],
+  "near_duplicates": {
+    "box_blister_pack": [
+      {
+        "stem": "Marvelon",
+        "forms": {
+          "Pack": {
+            "name": "Marvelon_Pack",
+            "count": 62
+          },
+          "Box": {
+            "name": "Marvelon_Box",
+            "count": 90
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 152
+      },
+      {
+        "stem": "Pac-Control",
+        "forms": {
+          "Pack": {
+            "name": "Pac-Control_Pack",
+            "count": 50
+          },
+          "Box": {
+            "name": "Pac-Control_Box",
+            "count": 86
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 136
+      },
+      {
+        "stem": "Cefixim 200mg",
+        "forms": {
+          "Box": {
+            "name": "Cefixim 200mg_Box",
+            "count": 90
+          },
+          "Blister": {
+            "name": "Cefixim 200mg_Blister",
+            "count": 46
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 136
+      },
+      {
+        "stem": "Doxycyclin 100mg",
+        "forms": {
+          "Box": {
+            "name": "Doxycyclin 100mg_Box",
+            "count": 82
+          },
+          "Blister": {
+            "name": "Doxycyclin 100mg_Blister",
+            "count": 50
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 132
+      },
+      {
+        "stem": "Augmentin 1g",
+        "forms": {
+          "Box": {
+            "name": "Augmentin 1g_Box",
+            "count": 93
+          },
+          "Pack": {
+            "name": "Augmentin 1g_Pack",
+            "count": 37
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 130
+      },
+      {
+        "stem": "Voltaren 100mg",
+        "forms": {
+          "Box": {
+            "name": "Voltaren 100mg_Box",
+            "count": 88
+          },
+          "Blister": {
+            "name": "Voltaren 100mg_Blister",
+            "count": 41
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 129
+      },
+      {
+        "stem": "No Spa Forte 80mg",
+        "forms": {
+          "Blister": {
+            "name": "No Spa Forte 80mg_Blister",
+            "count": 43
+          },
+          "Box": {
+            "name": "No Spa Forte 80mg_Box",
+            "count": 84
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 127
+      },
+      {
+        "stem": "Mercilon",
+        "forms": {
+          "Pack": {
+            "name": "Mercilon_Pack",
+            "count": 38
+          },
+          "Box": {
+            "name": "Mercilon_Box",
+            "count": 87
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 125
+      },
+      {
+        "stem": "Nabifar 5g",
+        "forms": {
+          "Box": {
+            "name": "Nabifar 5g_Box",
+            "count": 82
+          },
+          "Pack": {
+            "name": "Nabifar 5g_Pack",
+            "count": 42
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 124
+      },
+      {
+        "stem": "Cyclogest 400mg",
+        "forms": {
+          "Box": {
+            "name": "Cyclogest 400mg_Box",
+            "count": 77
+          },
+          "Blister": {
+            "name": "Cyclogest 400mg_Blister",
+            "count": 47
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 124
+      },
+      {
+        "stem": "GlobiFer plus",
+        "forms": {
+          "Box": {
+            "name": "GlobiFer plus_Box",
+            "count": 82
+          },
+          "Blister": {
+            "name": "GlobiFer plus_Blister",
+            "count": 41
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 123
+      },
+      {
+        "stem": "Nautamine 90mg",
+        "forms": {
+          "Box": {
+            "name": "Nautamine 90mg_Box",
+            "count": 82
+          },
+          "Pack": {
+            "name": "Nautamine 90mg_Pack",
+            "count": 40
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 122
+      },
+      {
+        "stem": "Metronidazol 250mg",
+        "forms": {
+          "Box": {
+            "name": "Metronidazol 250mg_Box",
+            "count": 73
+          },
+          "Blister": {
+            "name": "Metronidazol 250mg_Blister",
+            "count": 48
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 121
+      },
+      {
+        "stem": "Fluomizin 10mg",
+        "forms": {
+          "Box": {
+            "name": "Fluomizin 10mg_Box",
+            "count": 71
+          },
+          "Blister": {
+            "name": "Fluomizin 10mg_Blister",
+            "count": 49
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 120
+      },
+      {
+        "stem": "Daikyn 0.5mg",
+        "forms": {
+          "Box": {
+            "name": "Daikyn 0.5mg_Box",
+            "count": 80
+          },
+          "Blister": {
+            "name": "Daikyn 0.5mg_Blister",
+            "count": 40
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 120
+      },
+      {
+        "stem": "Cataflam 50mg",
+        "forms": {
+          "Box": {
+            "name": "Cataflam 50mg_Box",
+            "count": 71
+          },
+          "Blister": {
+            "name": "Cataflam 50mg_Blister",
+            "count": 49
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 120
+      },
+      {
+        "stem": "Calci Briozcal Tablets",
+        "forms": {
+          "Box": {
+            "name": "Calci Briozcal Tablets_Box",
+            "count": 74
+          },
+          "Blister": {
+            "name": "Calci Briozcal Tablets_Blister",
+            "count": 44
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 118
+      },
+      {
+        "stem": "Folacid 5mg",
+        "forms": {
+          "Box": {
+            "name": "Folacid 5mg_Box",
+            "count": 87
+          },
+          "Blister": {
+            "name": "Folacid 5mg_Blister",
+            "count": 29
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 116
+      },
+      {
+        "stem": "Sporal 100mg",
+        "forms": {
+          "Blister": {
+            "name": "Sporal 100mg_Blister",
+            "count": 42
+          },
+          "Box": {
+            "name": "Sporal 100mg_Box",
+            "count": 74
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 116
+      },
+      {
+        "stem": "Valiera 2mg",
+        "forms": {
+          "Box": {
+            "name": "Valiera 2mg_Box",
+            "count": 74
+          },
+          "Blister": {
+            "name": "Valiera 2mg_Blister",
+            "count": 41
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 115
+      },
+      {
+        "stem": "Aspirin 81mg",
+        "forms": {
+          "Box": {
+            "name": "Aspirin 81mg_Box",
+            "count": 79
+          },
+          "Blister": {
+            "name": "Aspirin 81mg_Blister",
+            "count": 30
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 109
+      },
+      {
+        "stem": "Neotergynan",
+        "forms": {
+          "Pack": {
+            "name": "Neotergynan_Pack",
+            "count": 36
+          },
+          "Box": {
+            "name": "Neotergynan_Box",
+            "count": 67
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 103
+      },
+      {
+        "stem": "Misoprostol200",
+        "forms": {
+          "Box": {
+            "name": "Misoprostol200_Box",
+            "count": 68
+          },
+          "Blister": {
+            "name": "Misoprostol200_Blister",
+            "count": 31
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 99
+      },
+      {
+        "stem": "Telfast 180mg",
+        "forms": {
+          "Blister": {
+            "name": "Telfast 180mg_Blister",
+            "count": 32
+          },
+          "Box": {
+            "name": "Telfast 180mg_Box",
+            "count": 65
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 97
+      },
+      {
+        "stem": "Exomuc 20mg",
+        "forms": {
+          "Box": {
+            "name": "Exomuc 20mg_Box",
+            "count": 62
+          },
+          "Pack": {
+            "name": "Exomuc 20mg_Pack",
+            "count": 35
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 97
+      },
+      {
+        "stem": "Lomac 20mg",
+        "forms": {
+          "Box": {
+            "name": "Lomac 20mg_Box",
+            "count": 67
+          },
+          "Blister": {
+            "name": "Lomac 20mg_Blister",
+            "count": 29
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 96
+      },
+      {
+        "stem": "Prednison 5mg",
+        "forms": {
+          "Box": {
+            "name": "Prednison 5mg_Box",
+            "count": 64
+          },
+          "Blister": {
+            "name": "Prednison 5mg_Blister",
+            "count": 28
+          }
+        },
+        "n_forms": 2,
+        "combined_count": 92
+      }
+    ],
+    "authentic_counterfeit": [
+      {
+        "stem": "Decolgen",
+        "kinds": {
+          "authentic": {
+            "name": "Authentic-Decolgen",
+            "count": 200
+          },
+          "counterfeit": {
+            "name": "Counterfeit-Decolgen",
+            "count": 170
+          }
+        },
+        "plain": {
+          "name": "Decolgen",
+          "count": 68
+        },
+        "combined_count": 438
+      },
+      {
+        "stem": "Medicol Advance",
+        "kinds": {
+          "counterfeit": {
+            "name": "Counterfeit-Medicol Advance",
+            "count": 357
+          },
+          "authentic": {
+            "name": "Authentic -Medicol Advance",
+            "count": 44
+          }
+        },
+        "plain": null,
+        "combined_count": 401
+      },
+      {
+        "stem": "Biogesic",
+        "kinds": {
+          "authentic": {
+            "name": "Authentic_Biogesic",
+            "count": 274
+          },
+          "counterfeit": {
+            "name": "Counterfeit_Biogesic",
+            "count": 113
+          }
+        },
+        "plain": {
+          "name": "Biogesic",
+          "count": 2
+        },
+        "combined_count": 389
+      },
+      {
+        "stem": "Alaxan",
+        "kinds": {
+          "counterfeit": {
+            "name": "Counterfeit-Alaxan",
+            "count": 202
+          },
+          "authentic": {
+            "name": "Authentic-Alaxan",
+            "count": 181
+          }
+        },
+        "plain": null,
+        "combined_count": 383
+      },
+      {
+        "stem": "Neozep Forte",
+        "kinds": {
+          "counterfeit": {
+            "name": "Counterfeit-Neozep Forte",
+            "count": 201
+          },
+          "authentic": {
+            "name": "Authentic-Neozep Forte",
+            "count": 170
+          }
+        },
+        "plain": {
+          "name": "Neozep Forte",
+          "count": 3
+        },
+        "combined_count": 374
+      },
+      {
+        "stem": "Bioflu",
+        "kinds": {
+          "counterfeit": {
+            "name": "Counterfeit-Bioflu",
+            "count": 192
+          },
+          "authentic": {
+            "name": "Authentic-Bioflu",
+            "count": 149
+          }
+        },
+        "plain": null,
+        "combined_count": 341
+      }
+    ],
+    "korean_english": [
+      {
+        "korean": {
+          "name": "타이레놀",
+          "count": 113
+        },
+        "english": [
+          {
+            "name": "Tylenol",
+            "count": 228
+          }
+        ],
+        "related": [
+          {
+            "name": "TYLOLHOT",
+            "count": 48
+          }
+        ],
+        "note": "Same acetaminophen brand family (Tylenol / 타이레놀).",
+        "combined_count": 389
+      },
+      {
+        "korean": {
+          "name": "베아제정",
+          "count": 65
+        },
+        "english": [],
+        "related": [
+          {
+            "name": "닥터베아제정",
+            "count": 68
+          }
+        ],
+        "note": "Bearse digestive tablets; 닥터베아제정 is a sibling SKU, no English class.",
+        "combined_count": 133
+      },
+      {
+        "korean": {
+          "name": "닥터베아제정",
+          "count": 68
+        },
+        "english": [],
+        "related": [
+          {
+            "name": "베아제정",
+            "count": 65
+          }
+        ],
+        "note": "Doctor Bearse; sibling of 베아제정.",
+        "combined_count": 133
+      },
+      {
+        "korean": {
+          "name": "훼스탈플러스정",
+          "count": 48
+        },
+        "english": [],
+        "related": [],
+        "note": "Festal Plus; no English class present.",
+        "combined_count": 48
+      },
+      {
+        "korean": {
+          "name": "신신파스 아렉스",
+          "count": 86
+        },
+        "english": [],
+        "related": [],
+        "note": "Sinsinpas Arex plaster; no English class present.",
+        "combined_count": 86
+      },
+      {
+        "korean": {
+          "name": "판피린티정",
+          "count": 41
+        },
+        "english": [],
+        "related": [],
+        "note": "Panpyrin-T; no English class present.",
+        "combined_count": 41
+      },
+      {
+        "korean": {
+          "name": "판콜에이내복액",
+          "count": 64
+        },
+        "english": [],
+        "related": [],
+        "note": "Pancol-A liquid; no English class present.",
+        "combined_count": 64
+      }
+    ],
+    "other_spelling_or_brand_families": [
+      {
+        "group": "Neozep/Neozap Forte",
+        "note": "Likely same brand, spelling drift",
+        "members": [
+          {
+            "name": "Neozep Forte",
+            "count": 3
+          },
+          {
+            "name": "Neozap Forte",
+            "count": 159
+          }
+        ],
+        "combined_count": 162
+      },
+      {
+        "group": "Cefixime family",
+        "note": "Same API, three spellings + form split",
+        "members": [
+          {
+            "name": "Cefixime",
+            "count": 215
+          },
+          {
+            "name": "Cefixim 200mg_Box",
+            "count": 90
+          },
+          {
+            "name": "Cefixim 200mg_Blister",
+            "count": 46
+          },
+          {
+            "name": "Cefixine",
+            "count": 36
+          }
+        ],
+        "combined_count": 387
+      },
+      {
+        "group": "Ketoconazole family",
+        "note": "Case + spelling (k/c) + cream SKU",
+        "members": [
+          {
+            "name": "Ketoconazole",
+            "count": 255
+          },
+          {
+            "name": "ketoconazole",
+            "count": 91
+          },
+          {
+            "name": "Ketokonazole",
+            "count": 1
+          },
+          {
+            "name": "Ketokonazole Cream",
+            "count": 1
+          }
+        ],
+        "combined_count": 348
+      },
+      {
+        "group": "Etoricoxib",
+        "note": "Spelling typo",
+        "members": [
+          {
+            "name": "Etoricoxib",
+            "count": 59
+          },
+          {
+            "name": "Etoricoxid",
+            "count": 13
+          }
+        ],
+        "combined_count": 72
+      },
+      {
+        "group": "Biogesic",
+        "note": "Auth/counterfeit plus typo Biolgesic",
+        "members": [
+          {
+            "name": "Biogesic",
+            "count": 2
+          },
+          {
+            "name": "Authentic_Biogesic",
+            "count": 274
+          },
+          {
+            "name": "Counterfeit_Biogesic",
+            "count": 113
+          },
+          {
+            "name": "Biolgesic Paracetamol",
+            "count": 1
+          }
+        ],
+        "combined_count": 390
+      },
+      {
+        "group": "Hansaplast",
+        "note": "Brand typo + plaster (toiletry-adjacent)",
+        "members": [
+          {
+            "name": "Hansaplast",
+            "count": 2
+          },
+          {
+            "name": "Handsaplast Koyo Panas",
+            "count": 2
+          }
+        ],
+        "combined_count": 4
+      },
+      {
+        "group": "Nellco/Nelco",
+        "note": "Spelling drift",
+        "members": [
+          {
+            "name": "Nellco",
+            "count": 6
+          },
+          {
+            "name": "Nelco",
+            "count": 1
+          }
+        ],
+        "combined_count": 7
+      },
+      {
+        "group": "Aluminum hydroxide",
+        "note": "UK/US spelling; ingredient-only",
+        "members": [
+          {
+            "name": "Aluminium Hydroxide",
+            "count": 61
+          },
+          {
+            "name": "Aluminum Hydroxide",
+            "count": 3
+          }
+        ],
+        "combined_count": 64
+      },
+      {
+        "group": "Panadol family",
+        "note": "Same brand fragmented across SKUs/languages",
+        "members": [
+          {
+            "name": "Panadol",
+            "count": 4
+          },
+          {
+            "name": "Panadol Paracetamol",
+            "count": 120
+          },
+          {
+            "name": "Panadol Extra Paracetamol",
+            "count": 97
+          },
+          {
+            "name": "Panadol Extra",
+            "count": 7
+          },
+          {
+            "name": "Panadol Cold Flu",
+            "count": 138
+          },
+          {
+            "name": "Panadol Flu Batuk",
+            "count": 7
+          },
+          {
+            "name": "Panadol Anak",
+            "count": 3
+          }
+        ],
+        "combined_count": 376
+      },
+      {
+        "group": "Amlodipine family",
+        "note": "Generic + dose/indication + typo amlopine",
+        "members": [
+          {
+            "name": "Amlodipine",
+            "count": 1066
+          },
+          {
+            "name": "amlopine",
+            "count": 280
+          },
+          {
+            "name": "amlodipine 5mg hipertensi",
+            "count": 196
+          },
+          {
+            "name": "amlodipine 10mg hipertensi",
+            "count": 220
+          }
+        ],
+        "combined_count": 1762
+      },
+      {
+        "group": "Metformin family",
+        "note": "Case collision plus dose-split Indonesian labels",
+        "members": [
+          {
+            "name": "Metformin",
+            "count": 755
+          },
+          {
+            "name": "metformin",
+            "count": 62
+          },
+          {
+            "name": "metformin 500mg diabetes",
+            "count": 194
+          },
+          {
+            "name": "metformin 850mg diabetes",
+            "count": 112
+          }
+        ],
+        "combined_count": 1123
+      },
+      {
+        "group": "Losartan family",
+        "note": "Case collision plus salt form",
+        "members": [
+          {
+            "name": "Losartan",
+            "count": 458
+          },
+          {
+            "name": "losartan",
+            "count": 219
+          },
+          {
+            "name": "Losartan Potassium",
+            "count": 50
+          }
+        ],
+        "combined_count": 727
+      },
+      {
+        "group": "Ibuprofen",
+        "note": "Pure case collision",
+        "members": [
+          {
+            "name": "Ibuprofen",
+            "count": 226
+          },
+          {
+            "name": "ibuprofen",
+            "count": 203
+          }
+        ],
+        "combined_count": 429
+      },
+      {
+        "group": "Glimepiride family",
+        "note": "Generic plus Indonesian dose/indication splits",
+        "members": [
+          {
+            "name": "Glimepiride",
+            "count": 624
+          },
+          {
+            "name": "glimepiride 1mg diabetes",
+            "count": 116
+          },
+          {
+            "name": "glimepiride 2mg diabetes",
+            "count": 220
+          },
+          {
+            "name": "glimepiride 3mg diabetes",
+            "count": 142
+          },
+          {
+            "name": "glimepiride 4mg diabetes",
+            "count": 142
+          }
+        ],
+        "combined_count": 1244
+      }
+    ]
+  },
+  "noise_non_medicine_candidates": {
+    "items": [
+      {
+        "name": "Back",
+        "count": 1353,
+        "reasons": [
+          "explicit:Back"
+        ]
+      },
+      {
+        "name": "Front",
+        "count": 889,
+        "reasons": [
+          "explicit:Front"
+        ]
+      },
+      {
+        "name": "su",
+        "count": 129,
+        "reasons": [
+          "degenerate-label"
+        ]
+      },
+      {
+        "name": "Eugenol",
+        "count": 125,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Methyl Salicylate",
+        "count": 123,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Levomenthol",
+        "count": 104,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Menthol",
+        "count": 63,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Aluminium Hydroxide",
+        "count": 61,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Aescin",
+        "count": 51,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Zinc",
+        "count": 47,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Salol and Menthol",
+        "count": 38,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Cassia Siamea",
+        "count": 36,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Calcium",
+        "count": 32,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Camphor",
+        "count": 29,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Magnesium Hydroxide",
+        "count": 29,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Clavulanic Acid",
+        "count": 22,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Escin",
+        "count": 19,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Eucalyptus oil",
+        "count": 19,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Quercetin",
+        "count": 19,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Magnesium Trisilicate",
+        "count": 17,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Propolis Extract",
+        "count": 17,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Kaolin",
+        "count": 16,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Activated Charcoal",
+        "count": 15,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Andrographis Paniculata",
+        "count": 15,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Asafoetida and Alcohol",
+        "count": 15,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "L-cysteine",
+        "count": 14,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Taurine",
+        "count": 14,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Herocyn",
+        "count": 13,
+        "reasons": [
+          "toiletry:herocyn"
+        ]
+      },
+      {
+        "name": "Minyak Tawon",
+        "count": 12,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Strong Ginger Tincture",
+        "count": 12,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Caffeine",
+        "count": 10,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Compound Cardamom Tincture",
+        "count": 10,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Strong Capsicum Tincture",
+        "count": 10,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Vitamin C",
+        "count": 9,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Balsem Otot Geliga",
+        "count": 8,
+        "reasons": [
+          "toiletry:balsem"
+        ]
+      },
+      {
+        "name": "Chamomile Extract",
+        "count": 8,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Dioctahedral smectite",
+        "count": 8,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Hydroxypropyl Methylcellulose",
+        "count": 8,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Polident",
+        "count": 8,
+        "reasons": [
+          "explicit:Polident"
+        ]
+      },
+      {
+        "name": "Lemon Bioflavonoid Complex",
+        "count": 7,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Marigold Extract",
+        "count": 7,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "MyBaby Minyak Telon",
+        "count": 7,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Phenyl Salicylate",
+        "count": 7,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Biotin",
+        "count": 6,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Calcium Ascorbate",
+        "count": 5,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Coptis Chinensis",
+        "count": 5,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Minyak Angin Cap Kapak",
+        "count": 5,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Pontirus Trifoliata",
+        "count": 5,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Smilax Glabra",
+        "count": 5,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Vitamin B group",
+        "count": 5,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Alumine",
+        "count": 4,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Collagen",
+        "count": 4,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Dettol",
+        "count": 4,
+        "reasons": [
+          "toiletry:dettol"
+        ]
+      },
+      {
+        "name": "Freshcare Hot",
+        "count": 4,
+        "reasons": [
+          "toiletry:freshcare"
+        ]
+      },
+      {
+        "name": "Lecithin",
+        "count": 4,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Magnesia",
+        "count": 4,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Sabun JF",
+        "count": 4,
+        "reasons": [
+          "toiletry:sabun"
+        ]
+      },
+      {
+        "name": "Vicks Vaporup",
+        "count": 4,
+        "reasons": [
+          "toiletry:vicks"
+        ]
+      },
+      {
+        "name": "Aluminum Hydroxide",
+        "count": 3,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Freshcare Lavender",
+        "count": 3,
+        "reasons": [
+          "toiletry:freshcare"
+        ]
+      },
+      {
+        "name": "Freshcare Smash",
+        "count": 3,
+        "reasons": [
+          "toiletry:freshcare"
+        ]
+      },
+      {
+        "name": "Lactacyd Baby",
+        "count": 3,
+        "reasons": [
+          "toiletry:lactacyd"
+        ]
+      },
+      {
+        "name": "Licorice Extract",
+        "count": 3,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Lonicera japonica",
+        "count": 3,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Medicated Oil",
+        "count": 3,
+        "reasons": [
+          "toiletry:medicated oil"
+        ]
+      },
+      {
+        "name": "Mentha oil",
+        "count": 3,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Mucopolysaccharide",
+        "count": 3,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Spearmint oil",
+        "count": 3,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Sutra 12",
+        "count": 3,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Sutra 3",
+        "count": 3,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Sutra OK 12",
+        "count": 3,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Vital Ear Oil",
+        "count": 3,
+        "reasons": [
+          "toiletry:vital ear oil"
+        ]
+      },
+      {
+        "name": "Balsem lang",
+        "count": 2,
+        "reasons": [
+          "toiletry:balsem"
+        ]
+      },
+      {
+        "name": "Bepanthen Baby",
+        "count": 2,
+        "reasons": [
+          "toiletry:bepanthen baby"
+        ]
+      },
+      {
+        "name": "Betadine Feminime Hygiene",
+        "count": 2,
+        "reasons": [
+          "toiletry:feminime"
+        ]
+      },
+      {
+        "name": "Bilberry Extract",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Caladine",
+        "count": 2,
+        "reasons": [
+          "toiletry:caladine"
+        ]
+      },
+      {
+        "name": "Chloride",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Durex Close Fit 3",
+        "count": 2,
+        "reasons": [
+          "condom:durex"
+        ]
+      },
+      {
+        "name": "Fiesta Durian 3",
+        "count": 2,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Folic Acid",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Freshcare Citrus",
+        "count": 2,
+        "reasons": [
+          "toiletry:freshcare"
+        ]
+      },
+      {
+        "name": "Freshcare Kayu Putih",
+        "count": 2,
+        "reasons": [
+          "toiletry:freshcare"
+        ]
+      },
+      {
+        "name": "Handsaplast Koyo Panas",
+        "count": 2,
+        "reasons": [
+          "toiletry:handsaplast"
+        ]
+      },
+      {
+        "name": "Hansaplast",
+        "count": 2,
+        "reasons": [
+          "toiletry:hansaplast"
+        ]
+      },
+      {
+        "name": "Kondom Andalan 12",
+        "count": 2,
+        "reasons": [
+          "condom:kondom"
+        ]
+      },
+      {
+        "name": "Koyo Cabe",
+        "count": 2,
+        "reasons": [
+          "toiletry:koyo"
+        ]
+      },
+      {
+        "name": "Lonrcera Japonica",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Minyak Kayu Putih Cap Ayam",
+        "count": 2,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Minyak Kayu Putih Sierra",
+        "count": 2,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Minyak Telon Lang",
+        "count": 2,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Polyethylene Glycol",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Povidone",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Propylene Glycol",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Selsun",
+        "count": 2,
+        "reasons": [
+          "toiletry:selsun"
+        ]
+      },
+      {
+        "name": "Sensitif Uji Kehamilan",
+        "count": 2,
+        "reasons": [
+          "pregnancy-test"
+        ]
+      },
+      {
+        "name": "Sutra Gerigi 12",
+        "count": 2,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Zambuk",
+        "count": 2,
+        "reasons": [
+          "toiletry:zambuk"
+        ]
+      },
+      {
+        "name": "valeriana officinalis",
+        "count": 2,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Andalan Ovulation Test",
+        "count": 1,
+        "reasons": [
+          "pregnancy-test"
+        ]
+      },
+      {
+        "name": "Antiflatulence",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Bio-Oil",
+        "count": 1,
+        "reasons": [
+          "toiletry:bio-oil"
+        ]
+      },
+      {
+        "name": "Carbamate Insecticides",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Citrate Dihydrate",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Dichlorobenzyl Alcohol",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Durex Extra Safe",
+        "count": 1,
+        "reasons": [
+          "condom:durex"
+        ]
+      },
+      {
+        "name": "Durex Extra Safe 12",
+        "count": 1,
+        "reasons": [
+          "condom:durex"
+        ]
+      },
+      {
+        "name": "Durex Invisible 3",
+        "count": 1,
+        "reasons": [
+          "condom:durex"
+        ]
+      },
+      {
+        "name": "Durex Performa 3",
+        "count": 1,
+        "reasons": [
+          "condom:durex"
+        ]
+      },
+      {
+        "name": "Fiesta Banana 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Black Coffee 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Bubble Gum 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Delay 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Grape 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Party Pack 12",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Strawberry 12",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Strawberry 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Ultra Safe",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Fiesta Ultra Thin 3",
+        "count": 1,
+        "reasons": [
+          "condom:fiesta"
+        ]
+      },
+      {
+        "name": "Freshcare Eucalyptus",
+        "count": 1,
+        "reasons": [
+          "toiletry:freshcare"
+        ]
+      },
+      {
+        "name": "Glucose Anhydrous",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Glycyrrhiza glabra L.",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Hyaluronate",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Licorice extract",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Medicine-detection",
+        "count": 1,
+        "reasons": [
+          "explicit:Medicine-detection"
+        ]
+      },
+      {
+        "name": "Minyak Angin Cap lang",
+        "count": 1,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Minyak Telon Sierra",
+        "count": 1,
+        "reasons": [
+          "toiletry:minyak"
+        ]
+      },
+      {
+        "name": "Phyllanthus emblica L.",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Propolis extract",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      },
+      {
+        "name": "Rohto",
+        "count": 1,
+        "reasons": [
+          "toiletry:rohto"
+        ]
+      },
+      {
+        "name": "Rohto Dry Fresh",
+        "count": 1,
+        "reasons": [
+          "toiletry:rohto"
+        ]
+      },
+      {
+        "name": "Sterimar Bouche",
+        "count": 1,
+        "reasons": [
+          "toiletry:sterimar"
+        ]
+      },
+      {
+        "name": "Sterimar Hygiene",
+        "count": 1,
+        "reasons": [
+          "toiletry:sterimar"
+        ]
+      },
+      {
+        "name": "Sterimar Hygiene Baby",
+        "count": 1,
+        "reasons": [
+          "toiletry:sterimar"
+        ]
+      },
+      {
+        "name": "Sutra 24",
+        "count": 1,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Sutra Gerigi 3",
+        "count": 1,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Sutra OK",
+        "count": 1,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Sutra OK 24",
+        "count": 1,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Sutra OK 3",
+        "count": 1,
+        "reasons": [
+          "condom:sutra"
+        ]
+      },
+      {
+        "name": "Tissue Lovers",
+        "count": 1,
+        "reasons": [
+          "toiletry:tissue lovers"
+        ]
+      },
+      {
+        "name": "Vicks Inhealer",
+        "count": 1,
+        "reasons": [
+          "toiletry:vicks"
+        ]
+      },
+      {
+        "name": "Zingiber officinale roxb.",
+        "count": 1,
+        "reasons": [
+          "ingredient-only"
+        ]
+      }
+    ],
+    "n_classes": 142,
+    "n_instances": 3662,
+    "by_family": {
+      "explicit": {
+        "n_classes": 4,
+        "n_instances": 2251
+      },
+      "degenerate-label": {
+        "n_classes": 1,
+        "n_instances": 129
+      },
+      "ingredient-only": {
+        "n_classes": 70,
+        "n_instances": 1128
+      },
+      "toiletry": {
+        "n_classes": 39,
+        "n_instances": 115
+      },
+      "condom": {
+        "n_classes": 26,
+        "n_instances": 36
+      },
+      "pregnancy-test": {
+        "n_classes": 2,
+        "n_instances": 3
+      }
+    }
+  },
+  "mfds_9digit": {
+    "n_classes": 53,
+    "n_instances": 4974,
+    "classes": [
+      {
+        "name": "201206715",
+        "count": 252
+      },
+      {
+        "name": "200902301",
+        "count": 198
+      },
+      {
+        "name": "199801026",
+        "count": 188
+      },
+      {
+        "name": "200906877",
+        "count": 164
+      },
+      {
+        "name": "201204389",
+        "count": 142
+      },
+      {
+        "name": "200806191",
+        "count": 138
+      },
+      {
+        "name": "201204330",
+        "count": 134
+      },
+      {
+        "name": "201203128",
+        "count": 130
+      },
+      {
+        "name": "200102527",
+        "count": 124
+      },
+      {
+        "name": "200801645",
+        "count": 118
+      },
+      {
+        "name": "200810700",
+        "count": 118
+      },
+      {
+        "name": "202106092",
+        "count": 113
+      },
+      {
+        "name": "201706946",
+        "count": 108
+      },
+      {
+        "name": "198900672",
+        "count": 104
+      },
+      {
+        "name": "200400463",
+        "count": 104
+      },
+      {
+        "name": "201003989",
+        "count": 104
+      },
+      {
+        "name": "201300035",
+        "count": 104
+      },
+      {
+        "name": "199901559",
+        "count": 102
+      },
+      {
+        "name": "200710782",
+        "count": 102
+      },
+      {
+        "name": "200901257",
+        "count": 102
+      },
+      {
+        "name": "201301591",
+        "count": 102
+      },
+      {
+        "name": "201500673",
+        "count": 102
+      },
+      {
+        "name": "200400485",
+        "count": 101
+      },
+      {
+        "name": "197900277",
+        "count": 100
+      },
+      {
+        "name": "198700405",
+        "count": 99
+      },
+      {
+        "name": "196800036",
+        "count": 98
+      },
+      {
+        "name": "198902527",
+        "count": 98
+      },
+      {
+        "name": "199400883",
+        "count": 98
+      },
+      {
+        "name": "202106954",
+        "count": 98
+      },
+      {
+        "name": "199600571",
+        "count": 96
+      },
+      {
+        "name": "200300406",
+        "count": 93
+      },
+      {
+        "name": "199303109",
+        "count": 91
+      },
+      {
+        "name": "200700547",
+        "count": 89
+      },
+      {
+        "name": "201802210",
+        "count": 88
+      },
+      {
+        "name": "202107327",
+        "count": 86
+      },
+      {
+        "name": "199902738",
+        "count": 84
+      },
+      {
+        "name": "201300036",
+        "count": 84
+      },
+      {
+        "name": "201300045",
+        "count": 84
+      },
+      {
+        "name": "200008591",
+        "count": 72
+      },
+      {
+        "name": "200610765",
+        "count": 59
+      },
+      {
+        "name": "201603303",
+        "count": 58
+      },
+      {
+        "name": "200102499",
+        "count": 56
+      },
+      {
+        "name": "197000053",
+        "count": 51
+      },
+      {
+        "name": "202001495",
+        "count": 50
+      },
+      {
+        "name": "201803439",
+        "count": 48
+      },
+      {
+        "name": "200202423",
+        "count": 45
+      },
+      {
+        "name": "201602703",
+        "count": 45
+      },
+      {
+        "name": "201300034",
+        "count": 40
+      },
+      {
+        "name": "200900740",
+        "count": 32
+      },
+      {
+        "name": "202008370",
+        "count": 28
+      },
+      {
+        "name": "200201403",
+        "count": 26
+      },
+      {
+        "name": "202003060",
+        "count": 18
+      },
+      {
+        "name": "200903973",
+        "count": 6
+      }
+    ]
+  },
+  "korean_hangul": {
+    "n_classes": 7,
+    "n_instances": 485,
+    "classes": [
+      {
+        "name": "타이레놀",
+        "count": 113
+      },
+      {
+        "name": "신신파스 아렉스",
+        "count": 86
+      },
+      {
+        "name": "닥터베아제정",
+        "count": 68
+      },
+      {
+        "name": "베아제정",
+        "count": 65
+      },
+      {
+        "name": "판콜에이내복액",
+        "count": 64
+      },
+      {
+        "name": "훼스탈플러스정",
+        "count": 48
+      },
+      {
+        "name": "판피린티정",
+        "count": 41
+      }
+    ]
+  },
+  "source_composition": {
+    "rows": [
+      {
+        "source": "medicine_52",
+        "n_images": 4869,
+        "pct_images": 17.206771035798848,
+        "note": "MFDS 9-digit item-permit codes; Korean packs"
+      },
+      {
+        "source": "Convenience",
+        "n_images": 367,
+        "pct_images": 1.2969572746227516,
+        "note": "QUALITATIVE: web screenshots mixed in"
+      },
+      {
+        "source": "Aeye",
+        "n_images": 321,
+        "pct_images": 1.1343958723539598,
+        "note": ""
+      },
+      {
+        "source": "packv2",
+        "n_images": 2756,
+        "pct_images": 9.739548362017175,
+        "note": ""
+      },
+      {
+        "source": "SevaMeds",
+        "n_images": 521,
+        "pct_images": 1.8411845778704456,
+        "note": "QUALITATIVE: Ayurvedic products"
+      },
+      {
+        "source": "Drug2",
+        "n_images": 2970,
+        "pct_images": 10.495812276919814,
+        "note": ""
+      },
+      {
+        "source": "Aiden",
+        "n_images": 2781,
+        "pct_images": 9.827896950206735,
+        "note": "QUALITATIVE: class names are pills but images are packs"
+      },
+      {
+        "source": "Indonesian",
+        "n_images": 779,
+        "pct_images": 2.752942007986712,
+        "note": "QUALITATIVE: condom SKUs mixed in"
+      },
+      {
+        "source": "rk6cb",
+        "n_images": 2961,
+        "pct_images": 10.464006785171573,
+        "note": ""
+      },
+      {
+        "source": "Pasus",
+        "n_images": 2495,
+        "pct_images": 8.817189101318162,
+        "note": ""
+      },
+      {
+        "source": "Hithesh",
+        "n_images": 3348,
+        "pct_images": 11.831642930345973,
+        "note": "QUALITATIVE: mixed box + blister of same drug"
+      },
+      {
+        "source": "AIMedisina",
+        "n_images": 2171,
+        "pct_images": 7.672191398381454,
+        "note": "QUALITATIVE: Front/Back view labels"
+      },
+      {
+        "source": "SmartVision",
+        "n_images": 1511,
+        "pct_images": 5.33978867017705,
+        "note": ""
+      },
+      {
+        "source": "Teknofest",
+        "n_images": 447,
+        "pct_images": 1.5796727568293458,
+        "note": ""
+      }
+    ],
+    "sum_images": 28297,
+    "expected_total": 28297,
+    "matches_n_images": true
+  },
+  "qualitative_sample_review": [
+    "Convenience: web screenshots (not pack photos).",
+    "Indonesian: condom products mixed into a medicine project.",
+    "AIMedisina: Front/Back view classes instead of product identity.",
+    "Hithesh: same drug split across box + blister classes.",
+    "SevaMeds: Ayurvedic / herbal products.",
+    "Aiden: class names look like pill/API names but images are packs."
+  ]
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "name": "medicine_52",
+    "images": 4869,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/project-pd1ub/medicine_52"
+  },
+  {
+    "name": "Hithesh",
+    "images": 3348,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/hitheshs-workspace-wogjn/medicine-detection-1tu11"
+  },
+  {
+    "name": "Drug2",
+    "images": 2970,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/product-nq3cy/drug-2-test1-r5drk"
+  },
+  {
+    "name": "rk6cb",
+    "images": 2961,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/data-dmf9w/medicines-rk6cb"
+  },
+  {
+    "name": "Aiden",
+    "images": 2781,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/aiden-knqrf/pill-detection-vc79k"
+  },
+  {
+    "name": "medicine packv2",
+    "images": 2756,
+    "license": "Public Domain",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://universe.roboflow.com/hfghfg-wzmb7/medicine-packv2-gnn8b"
+  },
+  {
+    "name": "Pasus",
+    "images": 2495,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/pasus-workspace/medicine_name_detection"
+  },
+  {
+    "name": "AIMedisina",
+    "images": 2171,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/laitsugas/final-aimedisina"
+  },
+  {
+    "name": "SmartVision",
+    "images": 1511,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/obat/smartvision-nbnsq"
+  },
+  {
+    "name": "Indonesian Medicines",
+    "images": 779,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/abdi-btu08/indonesian-medicines-poft7"
+  },
+  {
+    "name": "SevaMeds",
+    "images": 521,
+    "license": "Public Domain",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://universe.roboflow.com/sevameds-z0xbx/sevameds"
+  },
+  {
+    "name": "Teknofest",
+    "images": 447,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/teknofest-r4zmp/medicine-d7ttn"
+  },
+  {
+    "name": "ConvenienceMedicinesProject",
+    "images": 367,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/yolov5labeling/conveniencemedicinesproject"
+  },
+  {
+    "name": "medicine-Aeye",
+    "images": 321,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://universe.roboflow.com/gongjuhyeon/medicine-aeye"
+  }
+]
