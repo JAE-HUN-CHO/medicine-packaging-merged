@@ -1,5 +1,14 @@
 # medicine-packaging-merged
 
+## 블로그
+
+작업 기록을 GitHub Pages에 정리했습니다.
+
+- 주소: https://jae-hun-cho.github.io/medicine-packaging-merged/
+- 로컬: `cd site && npm i && npm run build` 후 `site/dist/`를 연다.
+
+원본 문서와 택소노미·페이로드는 아래 폴더에 그대로 있습니다.
+
 상업용 의약품 **포장**(상자·블리스터·병) 객체감지 데이터셋의 재현 레포입니다. 알약이 아니라 팩 단위이고, 클래스는 제품명·성분명·식약처 코드입니다.
 
 - Roboflow: [toyproject1/medicine-packaging-merged-v2](https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2)
@@ -31,6 +40,7 @@ versions/    v1 · v3 generate payload와 학습 기록
 charts/      소스·롱테일 그림
 scripts/     로컬 분석
 examples/    hosted inference 예제
+site/        한국어 블로그 (Pages)
 ```
 
 | 가고 싶은 곳 | 파일 |

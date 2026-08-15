@@ -1,0 +1,12 @@
+{
+  "name": "medicine-packaging-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node --watch build.mjs"
+  },
+  "dependencies": {
+    "marked": "^15.0.12"
+  }
+}
