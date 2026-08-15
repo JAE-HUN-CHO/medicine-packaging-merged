@@ -106,18 +106,18 @@ instance-seg COCO에서 `segmentation`을 제거하고 `bbox`만 남긴 뒤 `med
 
 ## 이 레포의 파일
 
-- `DATASET-CARD.md` — 이 카드
-- `STATS.md` / `stats.json` — 원본 758 분석
-- `remap.json` / `REMAP.md` — v1 drop·merge
-- `taxonomy.json` / `TAXONOMY.md` / `taxonomy-audit.md` — 14/75/694
-- `mid-remap.json` — 소분류→중분류
-- `generate-payload.json` — v1
-- `generate-v2-payload.json` — v3
-- `v2-generate-result.json` — v3 생성 기록 (v2 휴지통)
-- `train-v3-result.json` — 학습 job
-- `EVAL.md` — v3 RF-DETR Medium 평가 메모
-- `charts/` — 소스·롱테일 차트
-- `scripts/` — 분석·택소노미 스크립트
+- [docs/DATASET-CARD.md](DATASET-CARD.md) — 이 카드
+- [docs/STATS.md](STATS.md) / [data/stats.json](../data/stats.json) — 원본 758 분석
+- [data/remap.json](../data/remap.json) / [docs/REMAP.md](REMAP.md) — v1 drop·merge
+- [taxonomy/](../taxonomy/) — 14/75/694
+- [data/mid-remap.json](../data/mid-remap.json) — 소분류→중분류
+- [versions/v1-generate-payload.json](../versions/v1-generate-payload.json) — v1
+- [versions/v3-generate-payload.json](../versions/v3-generate-payload.json) — v3
+- [versions/v3-generate-result.json](../versions/v3-generate-result.json) — v3 생성 기록
+- [versions/train-v3-result.json](../versions/train-v3-result.json) — 학습 job
+- [docs/EVAL.md](EVAL.md) — v3 평가 메모
+- [docs/SOURCES.md](SOURCES.md) — 소스 14개 attribution
+- [docs/REPRODUCE.md](REPRODUCE.md) — 재현 순서
 
 ## 주의
 

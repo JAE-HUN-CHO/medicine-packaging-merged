@@ -7,8 +7,6 @@
 - 평가: [evaluation/3](https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/evaluation/3)
 - 라이선스: 이미지별 원본이 우선. 합친 셋은 CC BY 4.0, packv2·SevaMeds는 Public Domain.
 
-자세한 카드는 [DATASET-CARD.md](DATASET-CARD.md), 소스 URL·라이선스는 그 마지막 섹션에 있습니다.
-
 ## 한 줄
 
 Universe에서 상업 사용 가능한 포장 OD 14개를 fork → 합침 → packv2 폴리곤을 박스로 변환 → 노이즈 클래스 정리 → 치료 중분류 75개로 접어 RF-DETR Medium 학습.
@@ -21,17 +19,37 @@ Universe에서 상업 사용 가능한 포장 OD 14개를 fork → 합침 → pa
 | 클래스 | 758 | 75 |
 | split | 22,890 / 2,984 / 2,423 | 22,715 / 2,983 / 2,421 |
 
-v3 test (RF-DETR Medium): mAP50 **83.8**, precision **84.9**, recall **79.5**. 쉬운 클래스(식약처 박스, 필리핀 정품·위조)가 점수를 끌어올립니다. 메모는 [EVAL.md](EVAL.md).
+v3 test (RF-DETR Medium): mAP50 **83.8**, precision **84.9**, recall **79.5**. 쉬운 클래스(식약처 박스, 필리핀 정품·위조)가 점수를 끌어올립니다. 메모는 [docs/EVAL.md](docs/EVAL.md).
+
+## 폴더
+
+```
+docs/        카드, 재현, 버전, 소스, 평가
+taxonomy/    14 / 75 / 694 트리와 JSON
+data/        remap · 클래스 · 소스 JSON
+versions/    v1 · v3 generate payload와 학습 기록
+charts/      소스·롱테일 그림
+scripts/     로컬 분석
+examples/    hosted inference 예제
+```
+
+| 가고 싶은 곳 | 파일 |
+|---|---|
+| 데이터셋 카드 | [docs/DATASET-CARD.md](docs/DATASET-CARD.md) |
+| 재현 순서 | [docs/REPRODUCE.md](docs/REPRODUCE.md) |
+| 소스·라이선스 | [docs/SOURCES.md](docs/SOURCES.md) |
+| 중분류 75 | [taxonomy/mids.csv](taxonomy/mids.csv) · [taxonomy/tree.md](taxonomy/tree.md) |
+| v3 페이로드 | [versions/v3-generate-payload.json](versions/v3-generate-payload.json) |
 
 ## 재현
 
 원본 758 클래스는 건드리지 않습니다. 항상 `versions_generate` remap으로 새 버전을 만듭니다.
 
-1. v1 SKU 정리: `generate-payload.json` (`remap.json`의 drop·merge)
-2. v3 중분류: `generate-v2-payload.json` (`mid-remap.json`)
+1. v1 SKU 정리: `versions/v1-generate-payload.json`
+2. v3 중분류: `versions/v3-generate-payload.json`
 3. 한글 타깃은 파일 바이트 그대로 전송. 중간 재인코딩하면 깨집니다 (v2는 휴지통).
 
-택소노미는 `taxonomy.json` / [TAXONOMY.md](TAXONOMY.md) (14 대 / 75 중 / 694 소). 검증에서 옮긴 25건은 [taxonomy-audit.md](taxonomy-audit.md).
+검증에서 옮긴 25건은 [taxonomy/taxonomy-audit.md](taxonomy/taxonomy-audit.md).
 
 ## 주의
 
