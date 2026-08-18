@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>왜 이 데이터셋인가 — 약 상자</title>
+  <meta name="description" content="알약이 아니라 상자다. 상업 사용이 되는 포장 객체감지 14개를 합친 이유.">
+  <link rel="canonical" href="https://jae-hun-cho.github.io/medicine-packaging-merged/posts/why/">
+  <link rel="stylesheet" href="/medicine-packaging-merged/assets/site.css">
+  <link rel="icon" href="/medicine-packaging-merged/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로</a>
+  <header class="mast">
+    <div class="wrap">
+      <p class="mast-kicker"><a href="/medicine-packaging-merged/">medicine-packaging-merged</a></p>
+      <p class="mast-title"><a href="/medicine-packaging-merged/">약 상자</a></p>
+      <p class="mast-sub">상자 · 블리스터 · 병 — 포장 객체감지 노트</p>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="post-head">
+        <p class="dateline">2026년 8월 14일</p>
+        <h1>왜 이 데이터셋인가</h1>
+        <p class="dek">알약이 아니라 상자다. 상업 사용이 되는 포장 객체감지 14개를 합친 이유.</p>
+      </header>
+    <div class="article"><p>알약 한 알을 위에서 찍은 사진이 아니다. 약국 선반과 가정 서랍에 실제로 놓이는 <strong>상자·블리스터·병</strong>을 박스로 잡는 객체감지 데이터셋이다. 클래스 이름에는 제품명, 성분명, 한국 식약처 9자리 품목허가번호가 들어 있다.</p>
+<p>Roboflow 워크스페이스는 <code>toyproject1</code>, 프로젝트는 <a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">medicine-packaging-merged-v2</a>다. 원본(라벨 버전 0) 숫자는 이렇다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>이미지</td>
+<td>28,297</td>
+</tr>
+<tr>
+<td>클래스</td>
+<td>758</td>
+</tr>
+<tr>
+<td>박스</td>
+<td>51,520 (장당 1.82)</td>
+</tr>
+<tr>
+<td>split</td>
+<td>train 22,890 / valid 2,984 / test 2,423</td>
+</tr>
+</tbody></table></div>
+<p>미라벨 이미지는 0장이다. 원본 클래스는 그대로 둔다. 정리는 라이브 758을 고치는 방식이 아니라 <code>versions_generate</code> remap으로만 한다.</p>
+<h2>상업 사용이 되는 것만</h2>
+<p>Universe에는 포장 사진이 많지만 라이선스가 갈린다. 이 셋은 상업 사용이 되는 소스만 골랐다. 2026-08-14 Universe 페이지 기준으로 packv2와 SevaMeds는 Public Domain, 나머지 12개는 CC BY 4.0이다. 합친 셋은 CC BY 4.0으로 보면 되고, <strong>이미지별 원본 라이선스가 우선</strong>이다.</p>
+<p>1차 합본 <code>medicine-packaging-merged</code>는 packv2를 빼면 25,541장이다. packv2는 instance-seg COCO에서 <code>segmentation</code>을 버리고 <code>bbox</code>만 남긴 뒤 <code>medicine-packv2-od</code>로 올려 합쳤다. 그 2,756장이 더해져 28,297장이 된다.</p>
+<h2>758개는 학습 타깃이 되기 어렵다</h2>
+<p>원본 클래스 분포의 중앙값은 장수가 아니라 인스턴스 17이다. 싱글톤은 114개(15.0%), 5개 이하가 298개(39.3%)다. 상위는 <code>Back</code> 1,353, <code>Paracetamol</code> 1,142, <code>Amlodipine</code> 1,066, <code>Front</code> 889이다. <code>Front</code>와 <code>Back</code>만 합쳐도 2,242박스(4.35%)인데, 약 이름이 아니라 AIMedisina의 뷰 라벨이다.</p>
+<p>같은 약을 대소문자로 쪼갠 쌍도 있다. <code>Metformin</code> 755 + <code>metformin</code> 62, <code>Losartan</code> 458 + <code>losartan</code> 219. <code>_Box</code> / <code>_Blister</code> / <code>_Pack</code>로 갈라 놓은 줄기도 27개다. 이 상태 그대로 758-way를 돌리면 롱테일이 점수를 삼킨다.</p>
+<p>그래서 학습은 중분류 75개로 접은 v3에서 했다. 원본 28,297 → v3 28,119(22,715 / 2,983 / 2,421). 빠진 178장은 Front/Back·콘돔만 있던 이미지다.</p>
+<figure><img src="/medicine-packaging-merged/charts/chart-buckets.png" alt="원본 758 클래스 롱테일 버킷"><figcaption>인스턴스 수 구간별 클래스 수(758). 싱글톤 114, 5개 이하 298(39.3%). docs/STATS.md.</figcaption></figure>
+<figure><img src="/medicine-packaging-merged/charts/chart-top15.png" alt="상위 15 클래스"><figcaption>상위 15. 빨간 막대 Front/Back은 약 이름이 아니라 AIMedisina 뷰 라벨이다.</figcaption></figure>
+<h2>이 글의 범위</h2>
+<p>이어지는 글은 소스 14개의 라이선스, 14 / 75 / 694 택소노미, v1·깨진 v2·v3를 만든 방법, RF-DETR Medium 평가, 이 레포로 같은 버전을 다시 만드는 순서다. 차트와 JSON은 레포 <code>charts/</code> · <code>data/</code> · <code>taxonomy/</code> · <code>versions/</code>에 있다. 이 블로그는 그 숫자를 옮긴다.</p>
+</div>
+    <nav class="pager" aria-label="글 이동"><a class="pn-link" href="/medicine-packaging-merged/posts/visuals/"><span class="pn-dir">이전</span><span class="pn-title">그림으로 보기</span></a><a class="pn-link pn-next" href="/medicine-packaging-merged/posts/sources/"><span class="pn-dir">다음</span><span class="pn-title">소스 14개와 라이선스</span></a></nav>
+  </main>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>숫자는 레포 <code>docs/</code> · <code>data/</code> · <code>versions/</code>와 같습니다. 지어내지 않았습니다.</p>
+      <p><a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">Roboflow 프로젝트</a>
+      · <a href="https://github.com/jae-hun-cho/medicine-packaging-merged">GitHub</a>
+      · 라이선스는 이미지별 원본이 우선</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="/medicine-packaging-merged/assets/diagrams.js"></script>
+</body>
+</html>

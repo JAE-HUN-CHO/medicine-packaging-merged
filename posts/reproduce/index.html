@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이 레포로 재현하는 법 — 약 상자</title>
+  <meta name="description" content="이미지와 라벨은 Roboflow에 있다. 이 레포에는 페이로드와 택소노미만 있다. 한글은 재인코딩하지 말 것.">
+  <link rel="canonical" href="https://jae-hun-cho.github.io/medicine-packaging-merged/posts/reproduce/">
+  <link rel="stylesheet" href="/medicine-packaging-merged/assets/site.css">
+  <link rel="icon" href="/medicine-packaging-merged/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로</a>
+  <header class="mast">
+    <div class="wrap">
+      <p class="mast-kicker"><a href="/medicine-packaging-merged/">medicine-packaging-merged</a></p>
+      <p class="mast-title"><a href="/medicine-packaging-merged/">약 상자</a></p>
+      <p class="mast-sub">상자 · 블리스터 · 병 — 포장 객체감지 노트</p>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="post-head">
+        <p class="dateline">2026년 8월 15일</p>
+        <h1>이 레포로 재현하는 법</h1>
+        <p class="dek">이미지와 라벨은 Roboflow에 있다. 이 레포에는 페이로드와 택소노미만 있다. 한글은 재인코딩하지 말 것.</p>
+      </header>
+    <div class="article"><p>워크스페이스 <code>toyproject1</code>, 프로젝트 <code>medicine-packaging-merged-v2</code>. 순서의 원문은 레포 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/docs/REPRODUCE.md"><code>docs/REPRODUCE.md</code></a>다. 이 글은 그 순서를 레포 파일에 붙여 쓴다.</p>
+<p>원본 758 클래스는 건드리지 않는다. 항상 <code>versions_generate</code> remap으로 새 버전을 만든다.</p>
+<h2>전제</h2>
+<ul>
+<li>이미지·라벨은 Roboflow에 있다. 레포에는 페이로드와 택소노미, 소스 표, 차트만 있다.</li>
+<li>한글 클래스 이름은 JSON <strong>파일 바이트 그대로</strong> 보낸다. 중간 재인코딩하면 깨진다. v2가 그 휴지통이다.</li>
+<li>remap 키는 라이브 클래스명과 1:1. <code>pepfamin</code>이지 <code>pepsfamin</code>이 아니다.</li>
+</ul>
+<h2>1. v1 — SKU 정리</h2>
+<ol>
+<li><a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/data/remap.json"><code>data/remap.json</code></a>의 <code>drop</code> 28개(Front, Back, 콘돔) → omit.</li>
+<li>같은 파일의 <code>merge</code> 74→47 (대소문자, <code>_Box</code>/<code>_Blister</code>/<code>_Pack</code>, 타이레놀→Tylenol).</li>
+<li>preprocessing: auto-orient, filter-null 100%, 리사이즈·증강 없음.</li>
+<li>페이로드: <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/versions/v1-generate-payload.json"><code>versions/v1-generate-payload.json</code></a>.</li>
+</ol>
+<p>결과: 28,119장, 약 694 클래스.</p>
+<h2>2. v3 — 중분류 75</h2>
+<ol>
+<li>v1 canon 이름에 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/data/mid-remap.json"><code>data/mid-remap.json</code></a>의 <code>map</code>을 적용한다.</li>
+<li>페이로드: <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/versions/v3-generate-payload.json"><code>versions/v3-generate-payload.json</code></a> (758키, omit 28, 타깃 75).</li>
+<li>생성 후 샘플: <code>pepfamin</code>→제산궤양, <code>Glycediab</code>→당뇨-브랜드.</li>
+<li>v2는 쓰지 말 것.</li>
+</ol>
+<p>결과: 28,119장 (train 22,715 / valid 2,983 / test 2,421), 클래스 75. 생성 기록은 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/versions/v3-generate-result.json"><code>versions/v3-generate-result.json</code></a>.</p>
+<p>한글 타깃(<code>제산궤양</code>, <code>당뇨-브랜드</code>)은 에디터에서 다시 저장하지 말고, 레포에 있는 바이트를 그대로 <code>versions_generate</code>에 넣는다.</p>
+<h2>3. 학습</h2>
+<ul>
+<li>모델: RF-DETR Medium. NAS(<code>rfdetr-nas-parent</code>)는 trial 플랜에서 <code>nas_not_available_for_plan</code>으로 거절됨. 재시도하지 말 것.</li>
+<li>job: <code>2c3b3ee56385c34d5926</code></li>
+<li>기록: <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/versions/train-v3-result.json"><code>versions/train-v3-result.json</code></a></li>
+<li>모니터: <a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/3">https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/3</a></li>
+</ul>
+<h2>4. 평가</h2>
+<ul>
+<li>페이지: <a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/evaluation/3">https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/evaluation/3</a></li>
+<li>메모: <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/docs/EVAL.md"><code>docs/EVAL.md</code></a></li>
+<li>권고 confidence <strong>0.42</strong>. 기본 0.20은 쓰지 않는다.</li>
+<li>평가 UI가 한글을 대시로 바꾸더라도 모델 클래스 이름은 한글이다.</li>
+</ul>
+<h2>packv2만 따로</h2>
+<p>instance-seg COCO에서 <code>segmentation</code>을 제거하고 <code>bbox</code>만 남긴 뒤 <code>medicine-packv2-od</code>로 올려 합쳤다. 이미 합본에 들어 있으므로 재현 때는 이 변환을 다시 할 필요가 없다. 같은 소스를 다른 프로젝트에 넣을 때만 반복한다.</p>
+<h2>이 블로그를 로컬에서</h2>
+<p><code>site</code> 폴더로 이동한 뒤 패키지를 설치하고 빌드 스크립트를 실행한다. 산출물은 <code>site/dist/</code>다. 페이지 경로는 <code>/medicine-packaging-merged/</code>를 전제로 한다. Pages 워크플로는 레포 루트 <code>.github/workflows/pages.yml</code>이다. <code>docs/</code>, <code>taxonomy/</code>, <code>data/</code>, <code>versions/</code>, <code>charts/</code>, <code>scripts/</code>는 그대로 둔다.</p>
+</div>
+    <nav class="pager" aria-label="글 이동"><a class="pn-link" href="/medicine-packaging-merged/posts/eval/"><span class="pn-dir">이전</span><span class="pn-title">학습과 평가를 직접 보니</span></a><span class="pn-link is-empty"></span></nav>
+  </main>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>숫자는 레포 <code>docs/</code> · <code>data/</code> · <code>versions/</code>와 같습니다. 지어내지 않았습니다.</p>
+      <p><a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">Roboflow 프로젝트</a>
+      · <a href="https://github.com/jae-hun-cho/medicine-packaging-merged">GitHub</a>
+      · 라이선스는 이미지별 원본이 우선</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="/medicine-packaging-merged/assets/diagrams.js"></script>
+</body>
+</html>

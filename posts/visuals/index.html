@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>그림으로 보기 — 약 상자</title>
+  <meta name="description" content="차트와 평가 사진을 한 페이지에 모아 둔다. 숫자는 docs/EVAL.md, data/sources.json, taxonomy.json, v3 split과 같다.">
+  <link rel="canonical" href="https://jae-hun-cho.github.io/medicine-packaging-merged/posts/visuals/">
+  <link rel="stylesheet" href="/medicine-packaging-merged/assets/site.css">
+  <link rel="icon" href="/medicine-packaging-merged/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로</a>
+  <header class="mast">
+    <div class="wrap">
+      <p class="mast-kicker"><a href="/medicine-packaging-merged/">medicine-packaging-merged</a></p>
+      <p class="mast-title"><a href="/medicine-packaging-merged/">약 상자</a></p>
+      <p class="mast-sub">상자 · 블리스터 · 병 — 포장 객체감지 노트</p>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="post-head">
+        <p class="dateline">2026년 8월 18일</p>
+        <h1>그림으로 보기</h1>
+        <p class="dek">차트와 평가 사진을 한 페이지에 모아 둔다. 숫자는 docs/EVAL.md, data/sources.json, taxonomy.json, v3 split과 같다.</p>
+      </header>
+    <div class="article"><p>이 글은 문서 캔버스다. 표와 문장 사이에 묻혀 있던 그림만 꺼내 놓는다. 새 점수는 없다.</p>
+<nav class="toc" aria-label="차례">
+
+<ol>
+<li><a href="#%EC%86%8C%EC%8A%A4-14%EA%B0%9C">소스 14개</a></li>
+<li><a href="#%EB%8C%80%EB%B6%84%EB%A5%98-14">대분류 14</a></li>
+<li><a href="#v3-%EB%B6%84%ED%95%A0">v3 분할</a></li>
+<li><a href="#%EC%9B%90%EB%B3%B8-758-%EB%A1%B1%ED%85%8C%EC%9D%BC">원본 758 롱테일</a></li>
+<li><a href="#%EC%9E%AC%ED%99%95%EC%9D%B8%ED%95%9C-%ED%81%B4%EB%9E%98%EC%8A%A4">재확인한 클래스</a></li>
+<li><a href="#%ED%8F%89%EA%B0%80-%EB%8B%A4%EC%84%AF-%EC%9E%A5">평가 다섯 장</a></li>
+</ol>
+</nav>
+
+<h2>소스 14개</h2>
+<p><code>data/sources.json</code>의 장수. 합 28,297.</p>
+<figure><img src="/medicine-packaging-merged/charts/chart-sources.png" alt="소스 14개의 이미지 수"><figcaption>소스 14개의 장수. medicine_52가 4,869장으로 가장 크고, medicine-Aeye가 321장으로 가장 작다.</figcaption></figure>
+<h2>대분류 14</h2>
+<p><code>taxonomy/taxonomy.json</code> 각 대분류의 <code>n_instances</code>. 합 49,242(드롭 28개 제외).</p>
+<figure><img src="/medicine-packaging-merged/charts/chart-majors.png" alt="대분류 14개 박스 수"><figcaption>taxonomy.json 대분류 14개. 순환기 7,052, 해열진통소염 6,898.</figcaption></figure>
+<h2>v3 분할</h2>
+<p>학습 버전 v3. 22,715 / 2,983 / 2,421. 합 28,119.</p>
+<figure><img src="/medicine-packaging-merged/charts/chart-split.png" alt="v3 train/valid/test 분할"><figcaption>v3 split 22,715 / 2,983 / 2,421. 빠진 178장은 Front/Back·콘돔만 있던 이미지다.</figcaption></figure>
+<h2>원본 758 롱테일</h2>
+<p>원본 프로젝트(라벨 버전 0) 클래스 분포. <code>docs/STATS.md</code>.</p>
+<figure><img src="/medicine-packaging-merged/charts/chart-buckets.png" alt="원본 758 클래스 롱테일 버킷"><figcaption>인스턴스 수 구간별 클래스 수. 싱글톤 114(15.0%), 5개 이하 298(39.3%).</figcaption></figure>
+<figure><img src="/medicine-packaging-merged/charts/chart-top15.png" alt="상위 15 클래스"><figcaption>상위 15. 빨간 막대 Front/Back은 약 이름이 아니다. Back 1,353, Paracetamol 1,142, Amlodipine 1,066, Front 889.</figcaption></figure>
+<h2>재확인한 클래스</h2>
+<p>테스트셋에서 다시 본 클래스만 그린다. 75개 전부가 아니다. <code>docs/EVAL.md</code>.</p>
+<figure><img src="/medicine-packaging-merged/charts/chart-eval-f1.png" alt="재확인한 클래스 F1과 mAP50"><figcaption>F1: 식약처품목허가번호 0.97, 정품위조 브랜드(Alaxan / Bioflu / Decolgen / Medicol / Neozep) ≈ 1.0, Paracetamol계 0.69, Sitagliptin 0.54. mAP50: Amlodipine 0.41, 테스트 전체 83.8(그림에는 0.838). NSAID는 정확한 F1이 없어 생략.</figcaption></figure>
+<p>테스트 헤드라인은 mAP50 83.8, mAP50-95 69.0, precision 84.9, recall 79.5. 권고 confidence 0.42.</p>
+<h2>평가 다섯 장</h2>
+<p>아래 캡션은 <a href="/medicine-packaging-merged/posts/eval/">학습과 평가를 직접 보니</a>와 같다. 장마다 개별 mAP를 새로 재지는 않았다.</p>
+<h3>Sitagliptin — Januvia 100 mg</h3>
+<figure><img src="/medicine-packaging-merged/eval/sitagliptin.jpg" alt="Januvia 상자, sitagliptin phosphate 100 mg"><figcaption>손이 MSD Januvia(sitagliptin phosphate) 100 mg 상자를 들고 있다. 흰 상자, 오른쪽 청록 원 패턴.</figcaption></figure>
+<p>Sitagliptin 중분류는 소분류 2개, 494박스다. F1 0.54, Metformin 혼동 21회.</p>
+<h3>TYLOLHOT — 종합감기인데 Paracetamol계</h3>
+<figure><img src="/medicine-packaging-merged/eval/tylol-hot.jpg" alt="TYLOLHOT 상자"><figcaption>Nobel TYLOLHOT. 표시 용량 500 mg + 60 mg + 4 mg / 20 g. 성분 Parasetamol, Psödoefedrin HCl, Klorfeniramin maleat. 12포.</figcaption></figure>
+<p>파라세타몰+슈도에페드린+클로르페니라민 종합감기. v3 remap은 <strong>Paracetamol계</strong>에 남겨 두었다.</p>
+<h3>Telmisartan — 상자 위에 블리스터</h3>
+<figure><img src="/medicine-packaging-merged/eval/telmisartan.jpg" alt="TEMLUS-H 80 상자와 블리스터"><figcaption>Leeford TEMLUS-H 80. 라벨은 Telmisartan &amp; Hydrochlorothiazide Tablets IP, 10×10. 앞에 10정 은박 블리스터.</figcaption></figure>
+<p>순환기/Telmisartan 중분류는 소분류 1개, 477박스. 상자와 블리스터가 한 프레임에 있는 전형적인 팩이다.</p>
+<h3>은박 블리스터 — Asthalin-4</h3>
+<figure><img src="/medicine-packaging-merged/eval/i20.jpg" alt="Asthalin-4 블리스터 앞뒤"><figcaption>Cipla Asthalin-4, Salbutamol Sulphate 4 mg. 왼쪽은 은박 뒷면, 오른쪽은 30정 앞면. 은박에 제품명이 세로로 반복된다.</figcaption></figure>
+<p>평가 메모의 “작은 블리스터·은박 글자 반복에서 과검출”이 가리키는 유형이다.</p>
+<h3>Paracetamol계 — 어수선한 배경의 PARACIP-650</h3>
+<figure><img src="/medicine-packaging-merged/eval/paracetamol26.jpg" alt="PARACIP-650 블리스터"><figcaption>Cipla PARACIP-650, Paracetamol Tablets IP 650 mg. 한쪽 정이 빠진 블리스터. 아래는 초록 플라스틱, 위는 QR 용지, 바닥에는 발.</figcaption></figure>
+<p>Paracetamol계는 소분류 24개, 4,159박스. 테스트 F1 0.69, miss 47, background FP 223.</p>
+</div>
+    <nav class="pager" aria-label="글 이동"><span class="pn-link is-empty"></span><a class="pn-link pn-next" href="/medicine-packaging-merged/posts/why/"><span class="pn-dir">다음</span><span class="pn-title">왜 이 데이터셋인가</span></a></nav>
+  </main>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>숫자는 레포 <code>docs/</code> · <code>data/</code> · <code>versions/</code>와 같습니다. 지어내지 않았습니다.</p>
+      <p><a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">Roboflow 프로젝트</a>
+      · <a href="https://github.com/jae-hun-cho/medicine-packaging-merged">GitHub</a>
+      · 라이선스는 이미지별 원본이 우선</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="/medicine-packaging-merged/assets/diagrams.js"></script>
+</body>
+</html>

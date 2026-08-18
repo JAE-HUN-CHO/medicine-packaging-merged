@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>학습과 평가를 직접 보니 — 약 상자</title>
+  <meta name="description" content="RF-DETR Medium, 테스트 mAP50 83.8. 쉬운 클래스가 점수를 끌어올리고, Sitagliptin과 파라세타몰은 그렇지 않다.">
+  <link rel="canonical" href="https://jae-hun-cho.github.io/medicine-packaging-merged/posts/eval/">
+  <link rel="stylesheet" href="/medicine-packaging-merged/assets/site.css">
+  <link rel="icon" href="/medicine-packaging-merged/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로</a>
+  <header class="mast">
+    <div class="wrap">
+      <p class="mast-kicker"><a href="/medicine-packaging-merged/">medicine-packaging-merged</a></p>
+      <p class="mast-title"><a href="/medicine-packaging-merged/">약 상자</a></p>
+      <p class="mast-sub">상자 · 블리스터 · 병 — 포장 객체감지 노트</p>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="post-head">
+        <p class="dateline">2026년 8월 14일</p>
+        <h1>학습과 평가를 직접 보니</h1>
+        <p class="dek">RF-DETR Medium, 테스트 mAP50 83.8. 쉬운 클래스가 점수를 끌어올리고, Sitagliptin과 파라세타몰은 그렇지 않다.</p>
+      </header>
+    <div class="article"><p>모델은 RF-DETR Medium이다. 처음에 요청한 것은 <code>rfdetr-nas-parent</code>였으나 trial 플랜에서 거절됐다. 에러 코드 <code>nas_not_available_for_plan</code>, 메시지 그대로 <em>Neural Architecture Search is not available on your current plan</em>. NAS는 다시 시도하지 않고 medium으로 한 번 폴백했다.</p>
+<p><code>training_id</code>는 <code>2c3b3ee56385c34d5926</code>. 모델 표시 이름은 <code>toyproject1/medicine-packaging-merged-v2-3-rfdetr-medium-t1</code>. 학습 기록은 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/versions/train-v3-result.json"><code>versions/train-v3-result.json</code></a>, 모니터는 <a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/3">version 3</a>, 평가는 <a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2/evaluation/3">evaluation/3</a> (<code>eval</code> <code>mgmZOi2hagpAgLeF9Boh</code>). 메모는 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/docs/EVAL.md"><code>docs/EVAL.md</code></a>.</p>
+<p>COCO export는 6,857 MB, 폴링 중 progress 0.2 → 0.79 → 1.</p>
+<h2>헤드라인</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>split</th>
+<th align="right">mAP50</th>
+<th align="right">mAP50-95</th>
+<th align="right">P</th>
+<th align="right">R</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>test</td>
+<td align="right">83.8</td>
+<td align="right">69.0</td>
+<td align="right">84.9</td>
+<td align="right">79.5</td>
+</tr>
+<tr>
+<td>valid</td>
+<td align="right">79.3</td>
+<td align="right">—</td>
+<td align="right">77</td>
+<td align="right">75.2</td>
+</tr>
+</tbody></table></div>
+<p>Roboflow가 권고하는 confidence는 <strong>0.42</strong>. 평가 화면 기본값 0.20은 허위 박스가 많다. 배포 임계값은 0.42를 쓴다.</p>
+<p>valid의 mAP50-95는 평가 메모에 없다. 그래서 비워 둔다.</p>
+<h2>점수를 올리는 클래스와 약한 곳</h2>
+<figure><img src="/medicine-packaging-merged/charts/chart-eval-f1.png" alt="재확인한 클래스 F1과 mAP50"><figcaption>재확인한 클래스만이다. 식약처품목허가번호 F1 0.97, 정품위조 브랜드 ≈ 1.0, Paracetamol계 0.69, Sitagliptin 0.54. Amlodipine mAP50 0.41, 테스트 전체 mAP50 83.8(0.838). 75개 전부가 아니다. NSAID는 정확한 F1이 없어 그리지 않았다. 출처 docs/EVAL.md.</figcaption></figure>
+<h2>점수를 올리는 클래스</h2>
+<p>식약처품목허가번호는 테스트 F1 <strong>0.97</strong>(998 중 994). 상자 위주, 라벨 형식이 비슷하다. 필리핀 정품·위조 박스 — Alaxan, Bioflu, Decolgen, Medicol Advance, Neozep Forte — 는 클래스마다 약 <strong>1.0</strong>. 큰 상자만 있는 이미지가 많다.</p>
+<p>이 두 축이 평균을 끌어올린다. 83.8을 “포장 일반이 잘 된다”로 읽으면 안 된다.</p>
+<h2>약한 곳</h2>
+<ul>
+<li><strong>Sitagliptin</strong> F1 0.54. Metformin으로 21회 혼동.</li>
+<li><strong>Amlodipine</strong> mAP50 0.41.</li>
+<li><strong>Paracetamol계</strong> F1 0.69. miss 47, background FP 223.</li>
+<li>NSAID와 종합감기 상자끼리 혼동.</li>
+<li>작은 블리스터, 은박에 같은 글자가 반복되는 장면에서 과검출.</li>
+</ul>
+<p>아래 다섯 장은 그 약점과 냄새를 보기 위한 것이다. 장마다 개별 mAP를 새로 재지는 않았다.</p>
+<h2>다섯 장</h2>
+<h3>Sitagliptin — Januvia 100 mg</h3>
+<figure><img src="/medicine-packaging-merged/eval/sitagliptin.jpg" alt="Januvia 상자, sitagliptin phosphate 100 mg"><figcaption>손이 MSD Januvia(sitagliptin phosphate) 100 mg 상자를 들고 있다. 흰 상자, 오른쪽 청록 원 패턴.</figcaption></figure>
+<p>Sitagliptin 중분류는 소분류 2개, 494박스다. Metformin은 3개 소분류, 1,123박스. 둘 다 당뇨 대분류의 흰 상자다. F1 0.54, Metformin 혼동 21회는 그 겹침과 맞다. 브랜드 로고를 읽지 못하면 계열이 무너진다.</p>
+<h3>TYLOLHOT — 종합감기인데 Paracetamol계</h3>
+<figure><img src="/medicine-packaging-merged/eval/tylol-hot.jpg" alt="TYLOLHOT 상자"><figcaption>Nobel TYLOLHOT. 표시 용량 500 mg + 60 mg + 4 mg / 20 g. 성분 Parasetamol, Psödoefedrin HCl, Klorfeniramin maleat. 12포.</figcaption></figure>
+<p>파라세타몰+슈도에페드린+클로르페니라민이다. 적응증은 종합감기. v3 remap은 이 클래스를 <strong>Paracetamol계</strong>에 남겨 두었다. 택소노미 글에서 말한 알려진 냄새다. 검증 25건에는 넣지 않았다. 평가에서 NSAID↔종합감기 혼동과 같은 줄에 놓인다.</p>
+<h3>Telmisartan — 상자 위에 블리스터</h3>
+<figure><img src="/medicine-packaging-merged/eval/telmisartan.jpg" alt="TEMLUS-H 80 상자와 블리스터"><figcaption>Leeford TEMLUS-H 80. 라벨은 Telmisartan &amp; Hydrochlorothiazide Tablets IP, 10×10. 앞에 10정 은박 블리스터.</figcaption></figure>
+<p>순환기/Telmisartan 중분류는 소분류 1개, 477박스. 이 장은 객체감지 셋이 노리는 전형적인 팩이다. 상자와 블리스터가 한 프레임에 있다. 점수가 약한 예로 든 것이 아니라, 학습이 본 포장 형태를 보여 주기 위한 장이다.</p>
+<h3>은박 블리스터 — Asthalin-4</h3>
+<figure><img src="/medicine-packaging-merged/eval/i20.jpg" alt="Asthalin-4 블리스터 앞뒤"><figcaption>Cipla Asthalin-4, Salbutamol Sulphate 4 mg. 왼쪽은 은박 뒷면, 오른쪽은 30정 앞면. 은박에 제품명이 세로로 반복된다.</figcaption></figure>
+<p>평가 메모의 “작은 블리스터·은박 글자 반복에서 과검출”이 가리키는 유형이다. 같은 문자열이 포일 한 장에 여러 번 찍혀 있으면 모델이 박스를 쪼개기 쉽다. 권고 confidence 0.42가 기본 0.20보다 나은 이유이기도 하다.</p>
+<h3>Paracetamol계 — 어수선한 배경의 PARACIP-650</h3>
+<figure><img src="/medicine-packaging-merged/eval/paracetamol26.jpg" alt="PARACIP-650 블리스터"><figcaption>Cipla PARACIP-650, Paracetamol Tablets IP 650 mg. 한쪽 정이 빠진 블리스터. 아래는 초록 플라스틱, 위는 QR 용지, 바닥에는 발.</figcaption></figure>
+<p>Paracetamol계는 소분류 24개, 4,159박스로 해열진통소염에서 가장 크다. 그런데 테스트 F1은 0.69, miss 47, background FP 223. 흰 은박과 흰 종이가 한 장에 있으면 배경을 약 상자로 집는다. 이 장이 그 장면이다.</p>
+<h2>평가 UI가 한글을 대시로 바꾼다</h2>
+<p>Roboflow 평가 화면은 한글 중분류 이름을 글자 수만큼 대시로 보여 준다. <code>Paracetamol계</code>는 <code>Paracetamol-</code>. 모델은 한글 이름으로 학습됐다. 깨지는 쪽은 평가 API/UI다. 클래스 이름을 리포트에서 찾을 때 대시로 접힌 줄을 한글 원명과 맞춰 읽어야 한다.</p>
+<h2>읽는 법</h2>
+<p>테스트 mAP50 83.8은 맞다. 식약처 상자와 필리핀 정품·위조 상자가 그 숫자를 만든다. Sitagliptin 0.54, Amlodipine 0.41, Paracetamol계 0.69, 그리고 TYLOLHOT가 Paracetamol계에 남아 있는 사실이 같은 평가의 다른 면이다. 임계값은 0.42.</p>
+</div>
+    <nav class="pager" aria-label="글 이동"><a class="pn-link" href="/medicine-packaging-merged/posts/versions/"><span class="pn-dir">이전</span><span class="pn-title">버전 만들기 — v1, 깨진 v2, v3</span></a><a class="pn-link pn-next" href="/medicine-packaging-merged/posts/reproduce/"><span class="pn-dir">다음</span><span class="pn-title">이 레포로 재현하는 법</span></a></nav>
+  </main>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>숫자는 레포 <code>docs/</code> · <code>data/</code> · <code>versions/</code>와 같습니다. 지어내지 않았습니다.</p>
+      <p><a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">Roboflow 프로젝트</a>
+      · <a href="https://github.com/jae-hun-cho/medicine-packaging-merged">GitHub</a>
+      · 라이선스는 이미지별 원본이 우선</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="/medicine-packaging-merged/assets/diagrams.js"></script>
+</body>
+</html>

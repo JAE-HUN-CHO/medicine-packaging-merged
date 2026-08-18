@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>약 상자 — 의약품 포장 객체감지</title>
+  <meta name="description" content="의약품 포장 객체감지 데이터셋을 합치고 접어 학습한 기록.">
+  <link rel="canonical" href="https://jae-hun-cho.github.io/medicine-packaging-merged/">
+  <link rel="stylesheet" href="/medicine-packaging-merged/assets/site.css">
+  <link rel="icon" href="/medicine-packaging-merged/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로</a>
+  <header class="mast">
+    <div class="wrap">
+      <p class="mast-kicker"><a href="/medicine-packaging-merged/">medicine-packaging-merged</a></p>
+      <p class="mast-title"><a href="/medicine-packaging-merged/">약 상자</a></p>
+      <p class="mast-sub">상자 · 블리스터 · 병 — 포장 객체감지 노트</p>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    
+    <div class="article">
+    <header class="home-head">
+      <h1>포장을 본다</h1>
+      <p>상업용으로 쓸 수 있는 의약품 <em>포장</em> 객체감지 데이터셋 14개를 합치고, 758개 클래스 이름을 75개 중분류로 접어 RF-DETR Medium을 학습한 기록입니다. 알약이 아니라 상자·블리스터·병입니다.</p>
+      <p>원본 28,297장, 758 클래스, 51,520 박스. 학습 버전 v3는 28,119장 · 75 클래스 · 22,715 / 2,983 / 2,421. 테스트 mAP50 83.8, mAP50-95 69.0, precision 84.9, recall 79.5.</p>
+    </header>
+    <section class="gallery-block" aria-label="그림">
+      <h2>그림</h2>
+      <div class="gallery">
+        <figure>
+          <a href="/medicine-packaging-merged/posts/sources/"><img src="/medicine-packaging-merged/charts/chart-sources.png" alt="소스 14개의 이미지 수"></a>
+          <figcaption>소스 14개 장수. 합 28,297.</figcaption>
+        </figure>
+        <figure>
+          <a href="/medicine-packaging-merged/posts/taxonomy/"><img src="/medicine-packaging-merged/charts/chart-majors.png" alt="대분류 14개의 인스턴스 수"></a>
+          <figcaption>대분류 14개 박스. 합 49,242.</figcaption>
+        </figure>
+        <figure>
+          <a href="/medicine-packaging-merged/posts/eval/"><img src="/medicine-packaging-merged/charts/chart-eval-f1.png" alt="재확인한 클래스의 F1과 mAP50"></a>
+          <figcaption>재확인한 클래스 F1 · mAP50. 75개 전체가 아님.</figcaption>
+        </figure>
+        <figure>
+          <a href="/medicine-packaging-merged/posts/eval/"><img src="/medicine-packaging-merged/eval/sitagliptin.jpg" alt="Januvia 상자, sitagliptin phosphate 100 mg"></a>
+          <figcaption>Sitagliptin — Januvia 100 mg</figcaption>
+        </figure>
+        <figure>
+          <a href="/medicine-packaging-merged/posts/eval/"><img src="/medicine-packaging-merged/eval/tylol-hot.jpg" alt="TYLOLHOT 상자"></a>
+          <figcaption>TYLOLHOT — 종합감기인데 Paracetamol계</figcaption>
+        </figure>
+        <figure>
+          <a href="/medicine-packaging-merged/posts/eval/"><img src="/medicine-packaging-merged/eval/i20.jpg" alt="Asthalin-4 블리스터 앞뒤"></a>
+          <figcaption>은박 블리스터 — Asthalin-4</figcaption>
+        </figure>
+        <figure>
+          <a href="/medicine-packaging-merged/posts/eval/"><img src="/medicine-packaging-merged/eval/paracetamol26.jpg" alt="PARACIP-650 블리스터"></a>
+          <figcaption>Paracetamol계 — PARACIP-650</figcaption>
+        </figure>
+      </div>
+    </section>
+    <ol class="home-list">
+      <li>
+      <a href="/medicine-packaging-merged/posts/visuals/">
+        <time datetime="2026-08-18">2026년 8월 18일</time>
+        <span class="home-title">그림으로 보기</span>
+        <span class="home-dek">차트와 평가 사진을 한 페이지에 모아 둔다. 숫자는 docs/EVAL.md, data/sources.json, taxonomy.json, v3 split과 같다.</span>
+      </a>
+    </li>
+<li>
+      <a href="/medicine-packaging-merged/posts/why/">
+        <time datetime="2026-08-14">2026년 8월 14일</time>
+        <span class="home-title">왜 이 데이터셋인가</span>
+        <span class="home-dek">알약이 아니라 상자다. 상업 사용이 되는 포장 객체감지 14개를 합친 이유.</span>
+      </a>
+    </li>
+<li>
+      <a href="/medicine-packaging-merged/posts/sources/">
+        <time datetime="2026-08-14">2026년 8월 14일</time>
+        <span class="home-title">소스 14개와 라이선스</span>
+        <span class="home-dek">이미지별 원본이 이긴다. packv2와 SevaMeds만 Public Domain, 나머지는 CC BY 4.0.</span>
+      </a>
+    </li>
+<li>
+      <a href="/medicine-packaging-merged/posts/taxonomy/">
+        <time datetime="2026-08-14">2026년 8월 14일</time>
+        <span class="home-title">택소노미 14 / 75 / 694</span>
+        <span class="home-dek">소분류 694를 중분류 75로 접어 학습한다. 검증에서 25건을 옮겼다.</span>
+      </a>
+    </li>
+<li>
+      <a href="/medicine-packaging-merged/posts/versions/">
+        <time datetime="2026-08-14">2026년 8월 14일</time>
+        <span class="home-title">버전 만들기 — v1, 깨진 v2, v3</span>
+        <span class="home-dek">라이브 758은 건드리지 않는다. versions_generate remap만 쓴다. 한글은 파일 바이트 그대로.</span>
+      </a>
+    </li>
+<li>
+      <a href="/medicine-packaging-merged/posts/eval/">
+        <time datetime="2026-08-14">2026년 8월 14일</time>
+        <span class="home-title">학습과 평가를 직접 보니</span>
+        <span class="home-dek">RF-DETR Medium, 테스트 mAP50 83.8. 쉬운 클래스가 점수를 끌어올리고, Sitagliptin과 파라세타몰은 그렇지 않다.</span>
+      </a>
+    </li>
+<li>
+      <a href="/medicine-packaging-merged/posts/reproduce/">
+        <time datetime="2026-08-15">2026년 8월 15일</time>
+        <span class="home-title">이 레포로 재현하는 법</span>
+        <span class="home-dek">이미지와 라벨은 Roboflow에 있다. 이 레포에는 페이로드와 택소노미만 있다. 한글은 재인코딩하지 말 것.</span>
+      </a>
+    </li>
+    </ol>
+  </div>
+    
+  </main>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>숫자는 레포 <code>docs/</code> · <code>data/</code> · <code>versions/</code>와 같습니다. 지어내지 않았습니다.</p>
+      <p><a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">Roboflow 프로젝트</a>
+      · <a href="https://github.com/jae-hun-cho/medicine-packaging-merged">GitHub</a>
+      · 라이선스는 이미지별 원본이 우선</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="/medicine-packaging-merged/assets/diagrams.js"></script>
+</body>
+</html>

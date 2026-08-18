@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>택소노미 14 / 75 / 694 — 약 상자</title>
+  <meta name="description" content="소분류 694를 중분류 75로 접어 학습한다. 검증에서 25건을 옮겼다.">
+  <link rel="canonical" href="https://jae-hun-cho.github.io/medicine-packaging-merged/posts/taxonomy/">
+  <link rel="stylesheet" href="/medicine-packaging-merged/assets/site.css">
+  <link rel="icon" href="/medicine-packaging-merged/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로</a>
+  <header class="mast">
+    <div class="wrap">
+      <p class="mast-kicker"><a href="/medicine-packaging-merged/">medicine-packaging-merged</a></p>
+      <p class="mast-title"><a href="/medicine-packaging-merged/">약 상자</a></p>
+      <p class="mast-sub">상자 · 블리스터 · 병 — 포장 객체감지 노트</p>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="post-head">
+        <p class="dateline">2026년 8월 14일</p>
+        <h1>택소노미 14 / 75 / 694</h1>
+        <p class="dek">소분류 694를 중분류 75로 접어 학습한다. 검증에서 25건을 옮겼다.</p>
+      </header>
+    <div class="article"><p>리맵 후 소분류는 약 694개다. 이를 <strong>14개 대분류 · 75개 중분류</strong>로 나눈 검증본이 레포 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/tree/main/taxonomy"><code>taxonomy/</code></a>에 있다. <code>TAXONOMY.md</code>, <code>tree.md</code>, <code>mids.csv</code>, <code>taxonomy.json</code>, 검증 이동은 <code>taxonomy-audit.md</code>.</p>
+<p>758-way는 롱테일이 너무 길다. 싱글톤 114, 중앙값 17. 제품명 단위로 학습하면 같은 해열제가 Crocin·Calpol·Dolo-650·Tylenol로 갈라지고, 같은 혈압약이 Amlodipine과 amlodipine 10mg hipertensi로 갈라진다. 중분류 75는 치료 목적에 가깝게 묶되, 정품·위조처럼 제품명을 지켜야 하는 곳은 제품명으로 남긴다.</p>
+<p>학습은 중분류 75(v3)에서만 한다. 소분류는 원본 프로젝트에 그대로 둔다.</p>
+<pre class="mermaid">flowchart LR
+  A[&quot;758 raw&quot;] --&gt; B[&quot;694 SKU&quot;]
+  B --&gt; C[&quot;75 mid&quot;]
+  C --&gt; D[&quot;14 major&quot;]
+</pre>
+<p><em>원본 758 → v1 소분류 694 → 학습 중분류 75 → 대분류 14.</em></p>
+<h2>대분류 14</h2>
+<figure><img src="/medicine-packaging-merged/charts/chart-majors.png" alt="대분류 14개 박스 수"><figcaption>taxonomy.json 대분류 14개의 n_instances. 합 49,242. 순환기 7,052가 가장 크다.</figcaption></figure>
+<p>박스 합계 49,242는 드롭 28개(2,278박스)를 뺀 리맵 후 숫자다. 원본 51,520에서 Front/Back·콘돔을 빼면 그 근처가 된다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>대분류</th>
+<th align="right">소분류</th>
+<th align="right">박스</th>
+<th>대표 중분류</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>해열진통소염</td>
+<td align="right">53</td>
+<td align="right">6,898</td>
+<td>Paracetamol계, NSAID, 아스피린계</td>
+</tr>
+<tr>
+<td>호흡기감기</td>
+<td align="right">109</td>
+<td align="right">5,397</td>
+<td>종합감기, 진해거담, 비염알레르기</td>
+</tr>
+<tr>
+<td>순환기</td>
+<td align="right">32</td>
+<td align="right">7,052</td>
+<td>Amlodipine, Losartan, 순환기-브랜드</td>
+</tr>
+<tr>
+<td>당뇨</td>
+<td align="right">20</td>
+<td align="right">4,845</td>
+<td>Glimepiride, Metformin, 당뇨-브랜드</td>
+</tr>
+<tr>
+<td>항균항바이러스</td>
+<td align="right">58</td>
+<td align="right">4,878</td>
+<td>베타락탐, 세팔로스포린, 기타항균</td>
+</tr>
+<tr>
+<td>소화기</td>
+<td align="right">49</td>
+<td align="right">2,375</td>
+<td>제산궤양, 소화효소</td>
+</tr>
+<tr>
+<td>신경정신</td>
+<td align="right">33</td>
+<td align="right">3,549</td>
+<td>항우울항정신, 항전간신경통, 통풍</td>
+</tr>
+<tr>
+<td>호르몬내분비</td>
+<td align="right">11</td>
+<td align="right">1,157</td>
+<td>갑상선, 스테로이드(전신)</td>
+</tr>
+<tr>
+<td>피부외용</td>
+<td align="right">98</td>
+<td align="right">1,282</td>
+<td>스테로이드외용, 파스외용, 위생화장품</td>
+</tr>
+<tr>
+<td>비타민영양</td>
+<td align="right">68</td>
+<td align="right">2,015</td>
+<td>단일영양, 종합비타민, 면역건강</td>
+</tr>
+<tr>
+<td>피임산과</td>
+<td align="right">11</td>
+<td align="right">510</td>
+<td>경구피임, 산과기타</td>
+</tr>
+<tr>
+<td>정품위조</td>
+<td align="right">12</td>
+<td align="right">2,253</td>
+<td>Alaxan, Bioflu 등 제품명 쌍</td>
+</tr>
+<tr>
+<td>한국식약처코드</td>
+<td align="right">53</td>
+<td align="right">4,974</td>
+<td>식약처품목허가번호</td>
+</tr>
+<tr>
+<td>기타</td>
+<td align="right">87</td>
+<td align="right">2,057</td>
+<td>브랜드미분류, 성분명만</td>
+</tr>
+</tbody></table></div>
+<p>순환기 7,052박스가 대분류 중 가장 많고, 해열진통소염 6,898이 다음이다. 피부외용은 클래스 98개로 넓지만 박스는 1,282다. 식약처 코드 53개는 전부 한 중분류로 접힌다.</p>
+<h2>왜 75인가</h2>
+<p>중분류는 성분 계열(Paracetamol계, NSAID, 베타락탐)과 적응증(종합감기, 제산궤양), 그리고 데이터셋이 이미 들고 있는 특수 축을 섞는다.</p>
+<p>정품·위조 12개 소분류는 제품명 중분류 여섯 쌍으로 남긴다. Alaxan 383, Bioflu 341, Biogesic 387, Decolgen 370, Medicol Advance 401, Neozep Forte 371. 위조 탐지가 목적인 소스이므로 종합감기나 NSAID로 녹이면 안 된다.</p>
+<p><code>Atova</code>와 <code>Immucept 500</code>은 기타/브랜드미분류에 남긴다. Atova는 아토르바스타틴과 아토바쿠온이 한 이름에 겹치고, Immucept는 면역억제제라 14개 대분류 어디에 넣어도 억지다.</p>
+<p>TYLOLHOT는 파라세타몰+슈도에페드린+클로르페니라민 종합감기인데 v3 remap이 <strong>Paracetamol계</strong>로 넣었다. 알려진 냄새다. 검증 25건에는 넣지 않고, 평가 글에서 다시 본다.</p>
+<h2>검증에서 옮긴 25건</h2>
+<p>이름과 브랜드를 조회한 뒤 옮겼다. 목록은 <a href="https://github.com/jae-hun-cho/medicine-packaging-merged/blob/main/taxonomy/taxonomy-audit.md"><code>taxonomy/taxonomy-audit.md</code></a>.</p>
+<p><strong>종합감기.</strong> Panadol Cold Flu 138, Panadol Flu Batuk 7은 해열진통소염/Paracetamol계에서 호흡기감기/종합감기로. 판피린티정 41은 기타진통에서 종합감기로. 파라세타몰이 들어 있어도 복합 감기다.</p>
+<p><strong>기타호흡기.</strong> Salmeterol 12, Budesonide 12, Fluticasone Propionate 12. 호르몬·전신 스테로이드가 아니라 흡입 호흡기다.</p>
+<p><strong>외용 스테로이드 7.</strong> Betamethasone Valerate 72, Desoximetasone 45, Clobetasol Propionate 38, Fluocinolone Acetonide 15, Betamethasone Dipropionate 11, Mometasone Furoate 8, Kenalog 1. 호르몬내분비/스테로이드 → 피부외용/스테로이드외용.</p>
+<p><strong>pepfamin = 파모티딘.</strong> 346박스. 기타/브랜드미분류에 있던 것을 소화기/제산궤양으로. 키는 <code>pepfamin</code>이다. <code>pepsfamin</code>이 아니다.</p>
+<p><strong>Angenta.</strong> 171박스. 플루펜틱솔+멜리트라센. 항우울항정신.</p>
+<p><strong>Ace XR.</strong> 268박스. paracetamol 665mg ER. 기타진통 → Paracetamol계.</p>
+<p>나머지는 ByeBye Fever 9(해열 패치 → 파스외용), Tumeric 500 410(강황 → 면역건강), Leflunomide 20(항류마티스 → 기타진통), 파스 성분 여섯(Methyl Salicylate 123, Menthol 63, Levomenthol 104, Camphor 29, Eugenol 125, Salol and Menthol 38)이다.</p>
+<p>25를 센 단위는 소분류 한 줄이다. 감기 복합 3, 흡입제 3, 외용 스테로이드 7, 해열 패치·강황·레플루노미드·pepfamin·Angenta·Ace XR이 6, 파스 성분 6.</p>
+<h2>트리</h2>
+<p>전체 중분류 75행은 <code>taxonomy/mids.csv</code>다. 접힌 예시는 <code>taxonomy/tree.md</code>. 학습 페이로드는 이 맵을 <code>data/mid-remap.json</code>으로 펼친 것이다. 다음 글은 그 페이로드를 보내는 방법이다.</p>
+</div>
+    <nav class="pager" aria-label="글 이동"><a class="pn-link" href="/medicine-packaging-merged/posts/sources/"><span class="pn-dir">이전</span><span class="pn-title">소스 14개와 라이선스</span></a><a class="pn-link pn-next" href="/medicine-packaging-merged/posts/versions/"><span class="pn-dir">다음</span><span class="pn-title">버전 만들기 — v1, 깨진 v2, v3</span></a></nav>
+  </main>
+  <footer class="colophon">
+    <div class="wrap">
+      <p>숫자는 레포 <code>docs/</code> · <code>data/</code> · <code>versions/</code>와 같습니다. 지어내지 않았습니다.</p>
+      <p><a href="https://app.roboflow.com/toyproject1/medicine-packaging-merged-v2">Roboflow 프로젝트</a>
+      · <a href="https://github.com/jae-hun-cho/medicine-packaging-merged">GitHub</a>
+      · 라이선스는 이미지별 원본이 우선</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="/medicine-packaging-merged/assets/diagrams.js"></script>
+</body>
+</html>
