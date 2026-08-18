@@ -22,6 +22,12 @@ Roboflow가 권고하는 confidence는 **0.42**. 평가 화면 기본값 0.20은
 
 valid의 mAP50-95는 평가 메모에 없다. 그래서 비워 둔다.
 
+## 점수를 올리는 클래스와 약한 곳
+
+![재확인한 클래스 F1과 mAP50](../charts/chart-eval-f1.png)
+
+*재확인한 클래스만이다. 식약처품목허가번호 F1 0.97, 정품위조 브랜드 ≈ 1.0, Paracetamol계 0.69, Sitagliptin 0.54. Amlodipine mAP50 0.41, 테스트 전체 mAP50 83.8(0.838). 75개 전부가 아니다. NSAID는 정확한 F1이 없어 그리지 않았다. 출처 docs/EVAL.md.*
+
 ## 점수를 올리는 클래스
 
 식약처품목허가번호는 테스트 F1 **0.97**(998 중 994). 상자 위주, 라벨 형식이 비슷하다. 필리핀 정품·위조 박스 — Alaxan, Bioflu, Decolgen, Medicol Advance, Neozep Forte — 는 클래스마다 약 **1.0**. 큰 상자만 있는 이미지가 많다.

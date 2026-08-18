@@ -1,0 +1,1 @@
+(function(){if(window.mermaid){mermaid.initialize({startOnLoad:true,theme:"base",themeVariables:{primaryColor:"#efe6d6",primaryTextColor:"#1b1814",primaryBorderColor:"#0f4f4c",lineColor:"#0f4f4c",secondaryColor:"#f6f1e8",tertiaryColor:"#efe6d6",background:"#f6f1e8",fontFamily:"Noto Sans KR, sans-serif"}});}})();

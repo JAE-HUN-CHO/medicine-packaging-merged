@@ -43,6 +43,23 @@ function rewriteAssets(html) {
   );
 }
 
+function keepMermaid(html) {
+  return html.replace(
+    /<pre><code class="language-mermaid">([\s\S]*?)<\/code><\/pre>/g,
+    "<pre class=\"mermaid\">$1</pre>"
+  );
+}
+
+function wrapFigures(html) {
+  return html.replace(
+    /<p><img([^>]*)><\/p>(?:\s*<p><em>([\s\S]*?)<\/em><\/p>)?/g,
+    (_, attrs, cap) => {
+      const caption = cap ? `<figcaption>${cap}</figcaption>` : "";
+      return `<figure><img${attrs}>${caption}</figure>`;
+    }
+  );
+}
+
 function esc(s) {
   return String(s)
     .replace(/&/g, "&amp;")
@@ -110,6 +127,8 @@ function layout({ title, dek, date, bodyHtml, slug, prev, next, isHome }) {
       · 라이선스는 이미지별 원본이 우선</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script src="${BASE}assets/diagrams.js"></script>
 </body>
 </html>
 `;
@@ -133,6 +152,39 @@ function homeHtml(posts) {
       <p>상업용으로 쓸 수 있는 의약품 <em>포장</em> 객체감지 데이터셋 14개를 합치고, 758개 클래스 이름을 75개 중분류로 접어 RF-DETR Medium을 학습한 기록입니다. 알약이 아니라 상자·블리스터·병입니다.</p>
       <p>원본 28,297장, 758 클래스, 51,520 박스. 학습 버전 v3는 28,119장 · 75 클래스 · 22,715 / 2,983 / 2,421. 테스트 mAP50 83.8, mAP50-95 69.0, precision 84.9, recall 79.5.</p>
     </header>
+    <section class="gallery-block" aria-label="그림">
+      <h2>그림</h2>
+      <div class="gallery">
+        <figure>
+          <a href="${BASE}posts/sources/"><img src="${BASE}charts/chart-sources.png" alt="소스 14개의 이미지 수"></a>
+          <figcaption>소스 14개 장수. 합 28,297.</figcaption>
+        </figure>
+        <figure>
+          <a href="${BASE}posts/taxonomy/"><img src="${BASE}charts/chart-majors.png" alt="대분류 14개의 인스턴스 수"></a>
+          <figcaption>대분류 14개 박스. 합 49,242.</figcaption>
+        </figure>
+        <figure>
+          <a href="${BASE}posts/eval/"><img src="${BASE}charts/chart-eval-f1.png" alt="재확인한 클래스의 F1과 mAP50"></a>
+          <figcaption>재확인한 클래스 F1 · mAP50. 75개 전체가 아님.</figcaption>
+        </figure>
+        <figure>
+          <a href="${BASE}posts/eval/"><img src="${BASE}eval/sitagliptin.jpg" alt="Januvia 상자, sitagliptin phosphate 100 mg"></a>
+          <figcaption>Sitagliptin — Januvia 100 mg</figcaption>
+        </figure>
+        <figure>
+          <a href="${BASE}posts/eval/"><img src="${BASE}eval/tylol-hot.jpg" alt="TYLOLHOT 상자"></a>
+          <figcaption>TYLOLHOT — 종합감기인데 Paracetamol계</figcaption>
+        </figure>
+        <figure>
+          <a href="${BASE}posts/eval/"><img src="${BASE}eval/i20.jpg" alt="Asthalin-4 블리스터 앞뒤"></a>
+          <figcaption>은박 블리스터 — Asthalin-4</figcaption>
+        </figure>
+        <figure>
+          <a href="${BASE}posts/eval/"><img src="${BASE}eval/paracetamol26.jpg" alt="PARACIP-650 블리스터"></a>
+          <figcaption>Paracetamol계 — PARACIP-650</figcaption>
+        </figure>
+      </div>
+    </section>
     <ol class="home-list">
       ${items}
     </ol>
@@ -157,7 +209,7 @@ function loadPosts() {
       const raw = readFileSync(join(postsDir, file), "utf8");
       const fm = parseFrontmatter(raw, file);
       const slug = file.replace(/\.md$/, "");
-      const html = rewriteAssets(marked.parse(fm.body))
+      const html = wrapFigures(keepMermaid(rewriteAssets(marked.parse(fm.body))))
         .replace(/<table>/g, "<div class=\"table-wrap\"><table>")
         .replace(/<\/table>/g, "</table></div>");
       return { ...fm, slug, html, file };
